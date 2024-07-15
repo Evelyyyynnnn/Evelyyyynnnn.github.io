@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - main # default branch 这个和你主分支一致
+      - master # default branch 这个和你主分支一致
 
 jobs:
   pages:
