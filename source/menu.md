@@ -12,7 +12,7 @@
 ##### Interview 
 
 - [Quant Exercise](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
-- [CS Exercise](/2023/09/11/Interview/CS-Tutorial/index.html)
+- [CS Exercise](/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html)
 
 
 ##### Note
