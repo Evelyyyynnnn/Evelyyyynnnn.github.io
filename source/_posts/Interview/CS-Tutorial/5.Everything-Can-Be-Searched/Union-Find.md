@@ -1,5 +1,5 @@
 ---
-title: CS Exercise
+title: CS Exercise-5.Searching-Union Find
 tags: Interview
 date: 2023-09-11 10:15:38
 ---

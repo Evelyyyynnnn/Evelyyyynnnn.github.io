@@ -1,5 +1,5 @@
 ---
-title: CS Exercise
+title: CS Exercise-The Simplest Greedy Algo
 tags: Interview
 date: 2023-09-11 10:15:38
 ---
@@ -57,6 +57,75 @@ class Solution(object):
 
 ###   (283)Move Zeroes
 
+
+###   (345)Reverse Vowels of a String
+<a name="345"></a>
+
+#### 知识点：
+```python
+s= "asvisl"
+s_list=list(s)
+c_list=list(reversed(s_list))
+s=''.join(c_list)
+print(s_list,c_list,s)
+
+#result:['a', 's', 'v', 'i', 's', 'l'] ['l', 's', 'i', 'v', 's', 'a'] lsivsa
+
+class Solution:
+    def reverseVowels(self,s):
+        s_list=list(s)
+        c_list=list(reversed(s_list))
+        s=''.join(c_list)
+        return s
+```
+#### 答案：
+```python
+class Solution:
+    def reverseVowels(self, s):
+        Vowels=set('aeiouAEIOU')
+        s=list(s)
+        i,j=0,len(s)-1
+        while i<j:
+            if s[i] not in Vowels:
+                i=i+1
+            elif s[j] not in Vowels:
+                j=j-1
+            else: 
+                s[i],s[j]=s[j],s[i]
+                i=i+1
+                j=j-1
+        return ''.join(s)
+```
+
+Palindrome questions:
+[(9) Palindrome Number](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#9)
+[(345) Reverse Vowels of a String](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#345)
+[(680) Valid Palindrome II](/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html#680)
+
+
+
+###   (680)Valid Palindrome II
+<a name="680"></a>
+
+```python
+class Solution(object):
+    def validPalindrome(self, s):
+        l,r=0,len(s)-1
+        while l<r:
+            if s[l]!=s[r]:
+                return s[l+1:r+1] == s[l+1:r+1][::-1] or s[l:r] == s[l:r][::-1]
+            l+=1
+            r-=1
+        return True
+```
+
+Palindrome questions:
+[(9) Palindrome Number](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#9)
+[(345) Reverse Vowels of a String](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#345)
+[(680) Valid Palindrome II](/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html#680)
+
+
+
 ##   2.Medium
 
 ###   (5)Longest Palindromic Substring
@@ -74,4 +143,16 @@ class Solution(object):
 ###   (253)Meeting Rooms II
 
 ###   (581)Shortest Unsorted Continuous Subarray
+
+### (633)Sum of Square Numbers
+
+```python
+class Solution(object):
+    def judgeSquareSum(self, c):
+        for i in range(c):
+            for j in range(c):
+                if i**2+j**2==c:
+                    return True
+        return False
+```
 

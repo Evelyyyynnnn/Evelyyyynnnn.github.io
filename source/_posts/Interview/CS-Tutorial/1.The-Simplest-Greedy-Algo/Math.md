@@ -1,5 +1,5 @@
 ---
-title: CS Exercise
+title: CS Exercise-The Simplest Greedy Algo
 tags: Interview
 date: 2023-09-11 10:15:38
 ---
@@ -8,6 +8,21 @@ date: 2023-09-11 10:15:38
 
 ##   1.Easy
 
+
+## (9) Palindrome Number
+
+<a name="9"></a>
+
+```python
+class Solution():
+    def isPalindrome(self, s):
+        s=str(s)
+        return s==s[::-1]
+```
+Palindrome questions:
+[(9) Palindrome Number](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#9)
+[(345) Reverse Vowels of a String](/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#345)
+[(680) Valid Palindrome II](/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html#680)
 
 
 ## (13) Roman to Integer
@@ -86,4 +101,16 @@ class Solution:
 ###   (227)Basic Calculator II
 
 ###   (279)Perfect Squares
+
+### (633)Sum of Square Numbers
+
+```python
+class Solution(object):
+    def judgeSquareSum(self, c):
+        for i in range(c):
+            for j in range(c):
+                if i**2+j**2==c:
+                    return True
+        return False
+```
 

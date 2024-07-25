@@ -1,5 +1,5 @@
 ---
-title: CS Exercise
+title: CS Exercise-5.Searching-Backtracking
 tags: Interview
 date: 2023-09-11 10:15:38
 ---
@@ -17,3 +17,10 @@ date: 2023-09-11 10:15:38
 
 ###   (301)Remove Invalid Parentheses
 
+
+## Others
+
+### 37.Sudoku Solver
+
+
+### 08.12 N Queen

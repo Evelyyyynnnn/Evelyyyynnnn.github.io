@@ -1,5 +1,5 @@
 ---
-title: CS Exercise
+title: CS Exercise-The Simplest Greedy Algo
 tags: Interview
 date: 2023-09-11 10:15:38
 ---
@@ -67,6 +67,7 @@ print(result)
 
 ## (35) Search Insert Position
 
+### Method 1：Biscant
 ```python
 class Solution(object):
     def searchInsert(self, nums, target):
@@ -89,6 +90,24 @@ class Solution(object):
 - `elif nums[i] < target and nums[i+1] > target` : 这个条件检查是否” target”应该插入到 `nums[i]`和` nums $[i+1$ ]`之间。
 - `else”：如果以上条件都不满足，就返回`len(nums)” -->
 
+### Method 2: Traditional Index
+
+```python
+class Solution(object):
+    def searchInsert(self, nums, target):
+        k=0
+        s=0
+        for i in range(len(nums)):
+            if nums[i]!=target:
+                k+=1
+            else:
+                return k
+        for j in range(1,len(nums)):
+            if nums[j-1] < target:
+                if nums[j] > target:
+                    return j
+        return(len(nums))
+```
 
 ## (66) Plus One
 
