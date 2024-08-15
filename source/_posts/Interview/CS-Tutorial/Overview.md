@@ -59,3 +59,14 @@ result = solution.removeElement(nums,val)
 print(result)
 
 ```
+
+### Data Cleaning and Matrix Processing 
+
+
+```python
+# index place
+positions.loc[spread.index[i], 'long'] = capital / prices1[i]
+#cumulative multiply
+cumulative_returns = x.cumprod()
+
+```

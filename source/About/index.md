@@ -80,7 +80,7 @@ date: 2023-09-11 10:15:38
   <br>
   <font size="6">
     <strong> 
-        Welcome to this <a href="/index.html">site</a> and have a <a href="mailto:wd275@cornell.edu">coffee chat</a> with me!
+        Welcome to my <a href="[/index.html](https://www.linkedin.com/in/evelyyyn-du/)">LinkedInsite</a> and have a <a href="mailto:wd275@cornell.edu">coffee chat</a> with me!
     </strong>
   </font>
 
