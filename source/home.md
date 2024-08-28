@@ -86,9 +86,10 @@ date: 2023-09-02 10:15:38
             <font size="5">
                 <a href="https://www.orie.cornell.edu/orie">Operational Research & Industrial Engineering</a><br>
                 <strong>Cornell</strong> Master of Engineering<br>
+                <strong>Program </strong>Operational Research and Industry Engineering<br>
                 <strong>Concentration </strong>Financial Engineering<br>
-                <strong>Anticipated Graduation Date</strong> April 2026<br>
-                <strong>Interest Areas:</strong> Sales and Trading, Risk Management, Asset Management
+                <strong>Anticipated Graduation Date</strong> February 2026<br>
+                <strong>Interest Areas:</strong> DA,SnT,AM,Risk
             </font>
         </div>
     </div>
