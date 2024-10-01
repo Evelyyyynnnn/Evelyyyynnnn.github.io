@@ -89,7 +89,7 @@ date: 2023-09-02 10:15:38
                 <strong>Program </strong>Operational Research and Industry Engineering<br>
                 <strong>Concentration </strong>Financial Engineering<br>
                 <strong>Anticipated Graduation Date</strong> February 2026<br>
-                <strong>Interest Areas:</strong> DA,SnT,AM,Risk
+                <strong>Interest Areas:</strong> Data Analytics,SnT,AM,Risk
             </font>
         </div>
     </div>
