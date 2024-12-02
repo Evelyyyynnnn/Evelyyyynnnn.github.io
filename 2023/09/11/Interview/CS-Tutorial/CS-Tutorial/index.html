@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Exercise-Introduction - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quant Exercise</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/About/index.html">Home</a> &gt; <a href="/tags/Interview/index.html">Interview</a> &gt; <strong><a href="/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Tutorial</a></small></strong></em></p>
+<style>
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    .shake-on-hover:hover {
+        animation: shake 1.5s;
+        animation-iteration-count: infinite;
+    }
+</style>
+
+<img src="https://s2.loli.net/2024/07/20/TVCrsJG6ERte5u3.png" class="shake-on-hover" style="zoom: 80%;" />
+
+
+<p>In this series, I will mainly cover what I’ve exercised for coding for more learners,you can jump to the related link and your also refer  to this <a href="/pdf/LeetCode101.pdf">book</a>.Here is some <a href="/2023/09/11/Interview/CS-Tutorial/Overview/index.html">overview</a> exercise and some of this tutorial will be noted by Chinese</p>
+<h3 id="1-The-Simplest-Greedy-Algo"><a href="#1-The-Simplest-Greedy-Algo" class="headerlink" title="1. The Simplest Greedy Algo"></a>1. The Simplest Greedy Algo</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Array/index.html">Array</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/String/index.html">String</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Hash-Table/index.html">Hash Table</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html">Math</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Sorting/index.html">Sorting</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Greedy/index.html">Greedy</a></li>
+</ul>
+<h3 id="2-Mastering-Two-Pointers"><a href="#2-Mastering-Two-Pointers" class="headerlink" title="2. Mastering Two Pointers"></a>2. Mastering Two Pointers</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html">Two Pointers</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Prefix-Sum/index.html">Prefix Sum</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Stack/index.html">Stack</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Simulation/index.html">Simulation</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Linked-List/index.html">Linked List</a></li>
+</ul>
+<h3 id="3-Quick-Strike-Binary-Search"><a href="#3-Quick-Strike-Binary-Search" class="headerlink" title="3. Quick Strike! Binary Search"></a>3. Quick Strike! Binary Search</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/3.Quick-Strike!-Binary-Search/Binary-Search/index.html">Binary Search</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/3.Quick-Strike!-Binary-Search/Binary-Tree/index.html">Binary Tree</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/3.Quick-Strike!-Binary-Search/Tree/index.html">Tree</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/3.Quick-Strike!-Binary-Search/Heap-(Priority-Queue)/index.html">Heap (Priority Queue)</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/3.Quick-Strike!-Binary-Search/Sliding-Window/index.html">Sliding Window</a></li>
+</ul>
+<h3 id="4-All-Kinds-of-Sorting-Algorithms"><a href="#4-All-Kinds-of-Sorting-Algorithms" class="headerlink" title="4. All Kinds of Sorting Algorithms"></a>4. All Kinds of Sorting Algorithms</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/4.All-Kinds-of-Sorting-Algorithms/Quickselect/index.html">Quickselect</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/4.All-Kinds-of-Sorting-Algorithms/Merge-Sort/index.html">Merge Sort</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/4.All-Kinds-of-Sorting-Algorithms/Bucket-Sort/index.html">Bucket Sort</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/4.All-Kinds-of-Sorting-Algorithms/Counting-Sort/index.html">Counting Sort</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/4.All-Kinds-of-Sorting-Algorithms/Radix-Sort/index.html">Radix Sort</a></li>
+</ul>
+<h3 id="5-Everything-Can-Be-Searched"><a href="#5-Everything-Can-Be-Searched" class="headerlink" title="5. Everything Can Be Searched"></a>5. Everything Can Be Searched</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Backtracking/index.html">Backtracking</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Recursion/index.html">Recursion</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Divide-and-Conquer/index.html">Divide and Conquer</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Depth-First-Search/index.html">Depth-First Search</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Breadth-First-Search/index.html">Breadth-First Search</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Graph/index.html">Graph</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Matrix/index.html">Matrix</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Bit-Manipulation/index.html">Bit Manipulation</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/5.Everything-Can-Be-Searched/Union-Find/index.html">Union Find</a></li>
+</ul>
+<h3 id="6-Dynamic-Programming-Made-Easy"><a href="#6-Dynamic-Programming-Made-Easy" class="headerlink" title="6. Dynamic Programming Made Easy"></a>6. Dynamic Programming Made Easy</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Dynamic-Programming/index.html">Dynamic Programming</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Segment-Tree/index.html">Segment Tree</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Trie/index.html">Trie</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Binary-Indexed-Tree/index.html">Binary Indexed Tree</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Bitmask/index.html">Bitmask</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/6.Dynamic-Programming-Made-Easy/Memoization/index.html">Memoization</a></li>
+</ul>
+<h3 id="7-Clever-Math-Problem-Solving"><a href="#7-Clever-Math-Problem-Solving" class="headerlink" title="7. Clever Math Problem Solving"></a>7. Clever Math Problem Solving</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/7.Clever-Math-Problem-Solving/Number-Theory/index.html">Number Theory</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/7.Clever-Math-Problem-Solving/Geometry/index.html">Geometry</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/7.Clever-Math-Problem-Solving/Probability-and-Statistics/index.html">Probability and Statistics</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/7.Clever-Math-Problem-Solving/Randomized/index.html">Randomized</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/7.Clever-Math-Problem-Solving/Hash-Function/index.html">Hash Function</a></li>
+</ul>
+<h3 id="8-Simplifying-with-Divide-and-Conquer"><a href="#8-Simplifying-with-Divide-and-Conquer" class="headerlink" title="8. Simplifying with Divide and Conquer"></a>8. Simplifying with Divide and Conquer</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/8.Simplifying-with-Divide-and-Conquer/Design/index.html">Design</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/8.Simplifying-with-Divide-and-Conquer/Enumeration/index.html">Enumeration</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/8.Simplifying-with-Divide-and-Conquer/Ordered-Set/index.html">Ordered Set</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/8.Simplifying-with-Divide-and-Conquer/Monotonic-Stack/index.html">Monotonic Stack</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/8.Simplifying-with-Divide-and-Conquer/Monotonic-Queue/index.html">Monotonic Queue</a></li>
+</ul>
+<h3 id="9-Magical-Bit-Manipulation"><a href="#9-Magical-Bit-Manipulation" class="headerlink" title="9. Magical Bit Manipulation"></a>9. Magical Bit Manipulation</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/9.Magical-Bit-Manipulation/Suffix-Array/index.html">Suffix Array</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/9.Magical-Bit-Manipulation/String-Matching/index.html">String Matching</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/9.Magical-Bit-Manipulation/Rolling-Hash/index.html">Rolling Hash</a></li>
+</ul>
+<h3 id="10-Ingenious-Use-of-Data-Structures"><a href="#10-Ingenious-Use-of-Data-Structures" class="headerlink" title="10. Ingenious Use of Data Structures"></a>10. Ingenious Use of Data Structures</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Queue/index.html">Queue</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Binary-Search-Tree/index.html">Binary Search Tree</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Biconnected-Component/index.html">Biconnected Component</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Strongly-Connected-Component/index.html">Strongly Connected Component</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Eulerian-Circuit/index.html">Eulerian Circuit</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/10.Ingenious-Use-of-Data-Structures/Minimum-Spanning-Tree/index.html">Minimum Spanning Tree</a></li>
+</ul>
+<h3 id="11-Magical-Hash-Operations"><a href="#11-Magical-Hash-Operations" class="headerlink" title="11. Magical Hash Operations"></a>11. Magical Hash Operations</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/11.Magical-Hash-Operations/Hash-Function/index.html">Hash Function</a></li>
+</ul>
+<h3 id="12-Data-Streams-and-Big-Data"><a href="#12-Data-Streams-and-Big-Data" class="headerlink" title="12. Data Streams and Big Data"></a>12. Data Streams and Big Data</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/12.Data-Streams-and-Big-Data/Data-Stream/index.html">Data Stream</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/12.Data-Streams-and-Big-Data/Reservoir-Sampling/index.html">Reservoir Sampling</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/12.Data-Streams-and-Big-Data/Line-Sweep/index.html">Line Sweep</a></li>
+</ul>
+<h3 id="13-Advanced-Dynamic-Programming"><a href="#13-Advanced-Dynamic-Programming" class="headerlink" title="13. Advanced Dynamic Programming"></a>13. Advanced Dynamic Programming</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/13.Advanced-Dynamic-Programming/Concurrency/index.html">Concurrency</a></li>
+</ul>
+<h3 id="14-Comprehensive-Challenges"><a href="#14-Comprehensive-Challenges" class="headerlink" title="14. Comprehensive Challenges"></a>14. Comprehensive Challenges</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/14.Comprehensive-Challenges/Game-Theory/index.html">Game Theory</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/14.Comprehensive-Challenges/Interactive/index.html">Interactive</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/14.Comprehensive-Challenges/Brainteaser/index.html">Brainteaser</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/14.Comprehensive-Challenges/Iterator/index.html">Iterator</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/14.Comprehensive-Challenges/Doubly-Linked-List/index.html">Doubly-Linked List</a></li>
+</ul>
+<h3 id="15-Others"><a href="#15-Others" class="headerlink" title="15. Others"></a>15. Others</h3><ul>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/15.Others/Shortest-Path/index.html">Shortest Path</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/15.Others/Topological-Sort/index.html">Topological Sort</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/15.Others/Combinatorics/index.html">Combinatorics</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/15.Others/Rejection-Sampling/index.html">Rejection Sampling</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/15.Others/Shell/index.html">Shell</a></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
