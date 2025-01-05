@@ -100,7 +100,6 @@ class Me:
     def __init__(self):
         self.name = "Evelyn(Wenke) Du"
         self.MBTI = "ENTJ"
-        self.born_year = 2001
         self.laptop_brand = "hp"
         self.curr_location = "Ithaca, New York, USA"
         self.interes= "Kpop! Language Learning! Aerobics!"
