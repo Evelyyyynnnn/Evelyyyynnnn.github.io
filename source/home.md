@@ -88,7 +88,6 @@ date: 2023-09-02 10:15:38
                 <strong>Cornell</strong> Master of Engineering<br>
                 <strong>Program </strong>Operational Research and Industry Engineering<br>
                 <strong>Concentration </strong>Financial Engineering<br>
-                <strong>Anticipated Graduation Date</strong> February 2026<br>
                 <strong>Interest Areas:</strong> Quant & Trading
             </font>
         </div>
@@ -110,23 +109,6 @@ class Me:
         self.paced_graduate = "Master of Big Data and Intelligence, The Universidad Intrnacional Isabel i de castilla, ENEB,Span"
     return
 ```
-
-
-
-
-## Biography
-
-I have rich internship experience in corporate finance and advisory across various geographical locations. 
-
-- I developed a keen interest in financial market after my internship in [Deloitte](https://www2.deloitte.com/us/en/pages/about-deloitte/articles/innovation-that-matters.html?id=us:2ps:3bi:firmfy24:eng:greendot:090419:nonem:na:JZtreuhM:1161506048:77309543165547:be:RLSA_Brand-Building-General:Brand_BB-RLSA-General_Exact:br&msclkid=081a47d594a019dca55721aa410647c3),where as a corporate finance intern, I facilitated domestic clients with the scoring grid consultory for international M&A target's investigation. At [Efund](https://www.efunds.com.cn/en/),I also analyzed the downturn cycle of REITs,interacted on a daily basis with clients and prepared pitch books for their specific needs.
-<br>
-- As the digital investment management intern in a Private Equity firm [KKR](https://www.kkr.com/)(Kohlberg Kravis Roberts & Co. L.P), I built quantitative valuation models and established algorithmic recommendation system on China’s pharmaceutical retail and manufacturing industry. Then as the algorithmic trading intern in one digital wealth management start-up,[AQUMON](https://www.aqumon.com/en/) in Hong Kong,I assisted to automatically integrate local databases, live trading records, and financial websites like Bloomberg before packaging them for user-friendly access.
-<br>
-- I also worked as a summer intern at [CICC](https://en.cicc.com/)(China International Capital Corporation) Shenzhen to enrich my professional experience and gain exposure to sales and trading field.
-<br>
-
-I hope to enhance my analytical and computational skills through the Financial Engineering program at Cornell. With strong quantitative and communicational skills, I am searching for a <u><font size="5">quantitative trading</font></u> and <u><font size="5">quantitative research</font></u> <strong><font size="5"><u> summer internship</u></font></strong>.
-
 
 ## Technical Background
 <div style="background-color: #f2f2f2;padding: 5px;">
