@@ -2,7 +2,7 @@
 # [About](/About/index.html)
 
 
-##### Project
+##### Tech
 
 - [Economy Business](/2023/09/11/Project/Economy/Economy/index.html)
 - [Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)
