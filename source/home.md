@@ -87,6 +87,7 @@ date: 2023-09-02 10:15:38
                 <a href="https://www.orie.cornell.edu/orie">Operational Research & Industrial Engineering</a><br>
                 <strong>Cornell</strong> Master of Engineering<br>
                 <strong>Program </strong>Operational Research and Industry Engineering<br>
+                <strong>Anticipated Graduation Date</strong> February 2026<br>  
                 <strong>Concentration </strong>Financial Engineering<br>
                 <strong>Interest Areas:</strong> Quant & Trading
             </font>
@@ -100,6 +101,7 @@ class Me:
     def __init__(self):
         self.name = "Evelyn(Wenke) Du"
         self.MBTI = "ENTJ"
+        self.born_year = 2001
         self.laptop_brand = "hp"
         self.curr_location = "Ithaca, New York, USA"
         self.interes= "Kpop! Language Learning! Aerobics!"
