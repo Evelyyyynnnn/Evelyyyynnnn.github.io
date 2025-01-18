@@ -114,6 +114,7 @@ class Me:
 ## Technical Background
 <div style="background-color: #f2f2f2;padding: 5px;">
 <font size="3.5">
+  
 - 📟 My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), [C++](https://www.w3schools.com/html/) and [R](https://www.rstudio.com/categories/rstudio-ide/)
 - 🖨️ The toolkit I use includes [STATA](https://www.stata.com/), [Jupter](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), [JointQuant](https://www.joinquant.com/), [MyQuant](https://www.myquant.cn/) and [Tableau](https://www.tableau.com/)
 🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [TensorFlow](https://www.tensorflow.org/), [Node.js](https://nodejs.org/en), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), [LLM](https://en.wikipedia.org/wiki/Large_language_model), [Seaborn](https://seaborn.pydata.org/) and [Scikit-learn](https://scikit-learn.org/stable/index.html).
