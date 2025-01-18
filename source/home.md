@@ -83,7 +83,7 @@ date: 2023-09-02 10:15:38
         <div>
             <font size="10"><strong class="shake-text">Evelyn Du</strong></font>
             <br><br>
-            <font size="3">
+            <font size="3.5">
                 <a href="https://www.orie.cornell.edu/orie">Operational Research & Industrial Engineering</a><br>
                 <strong>Cornell</strong> Master of Engineering<br>
                 <strong>Program </strong>Operational Research and Industry Engineering<br>
@@ -113,11 +113,12 @@ class Me:
 
 ## Technical Background
 <div style="background-color: #f2f2f2;padding: 5px;">
-
-📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), [C++](https://www.w3schools.com/html/) and [R](https://www.rstudio.com/categories/rstudio-ide/)
-🖨️- The toolkit I use includes [STATA](https://www.stata.com/), [Jupter](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), [JointQuant](https://www.joinquant.com/), [MyQuant](https://www.myquant.cn/) and [Tableau](https://www.tableau.com/)
+<font size="3.5">
+- 📟 My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), [C++](https://www.w3schools.com/html/) and [R](https://www.rstudio.com/categories/rstudio-ide/)
+- 🖨️ The toolkit I use includes [STATA](https://www.stata.com/), [Jupter](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), [JointQuant](https://www.joinquant.com/), [MyQuant](https://www.myquant.cn/) and [Tableau](https://www.tableau.com/)
 🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [TensorFlow](https://www.tensorflow.org/), [Node.js](https://nodejs.org/en), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), [LLM](https://en.wikipedia.org/wiki/Large_language_model), [Seaborn](https://seaborn.pydata.org/) and [Scikit-learn](https://scikit-learn.org/stable/index.html).
-🎮- I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
+- 🎮 I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
+</font>font>
 </div>
 
 
