@@ -83,7 +83,7 @@ date: 2023-09-02 10:15:38
         <div>
             <font size="10"><strong class="shake-text">Evelyn Du</strong></font>
             <br><br>
-            <font size="5">
+            <font size="3">
                 <a href="https://www.orie.cornell.edu/orie">Operational Research & Industrial Engineering</a><br>
                 <strong>Cornell</strong> Master of Engineering<br>
                 <strong>Program </strong>Operational Research and Industry Engineering<br>
