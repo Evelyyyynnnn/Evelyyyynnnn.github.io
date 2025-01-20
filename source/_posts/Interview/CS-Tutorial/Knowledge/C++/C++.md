@@ -10,7 +10,7 @@ private	仅 允许该类内部访问，外部不能访问或修改
 protected	允许该类 及其子类 访问，但外部仍不能访问
 public	允许 任何代码 访问（不建议数据成员设为 public）
 
-
+```python
 Private:
 class MyHashSet {
 private:
@@ -35,3 +35,4 @@ int main() {
     
     cout << mySet.contains(5) << endl;  // ✅ 正确访问
 }
+```
