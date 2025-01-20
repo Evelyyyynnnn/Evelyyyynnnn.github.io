@@ -2,16 +2,16 @@
 # [About](/About/index.html)
 
 
-##### Tech
+##### Tech Project 
 
 - [Economy Business](/2023/09/11/Project/Economy/Economy/index.html)
 - [Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)
 - [Design](/2023/09/11/Project/Design/Design/index.html)
 
 
-##### Interview 
+##### Knowledge Basement
 
-- [Quant Exercise](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
+- [Quantitative Finance](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
 - [CS Exercise](/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html)
 
 

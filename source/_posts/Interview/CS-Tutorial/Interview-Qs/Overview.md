@@ -4,6 +4,8 @@ tags: Interview
 date: 2023-09-11 10:15:38
 ---
 
+*<small>[Home](/About/index.html) > [Interview](/tags/Interview/index.html) > [CS Tutorial](/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html) > **[Interview Qs](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/index.html) </small>***
+
 
 ### 1. Normal Function VS类函数
 
