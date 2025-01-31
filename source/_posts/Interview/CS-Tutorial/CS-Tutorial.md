@@ -80,3 +80,7 @@ In this series, I will mainly cover what I've exercised for coding for more lear
 - [Combinatorics](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Combinatorics/index.html)
 - [Rejection Sampling](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Rejection-Sampling/index.html)
 - [Shell](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Shell/index.html)
+
+### 16.Interesting Qs
+
+- [Interesting Qs](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/16.Interesting-Qs/overview/index.html)

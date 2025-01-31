@@ -7,6 +7,8 @@
 #### 1.VS Code
 - `cmd+ O`: open multiple windows
 - `command+shift+P`: open Terminal -(Select the "Preview" option)
+-  `cmd+单引号`: open Terminal
+- `control+enter `:execute code
 
 
 #### 2.Mac
