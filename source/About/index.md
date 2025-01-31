@@ -86,9 +86,6 @@ date: 2023-09-11 10:15:38
 
   <br>
   <br>
-  <font size="5">
-    <strong>💬Contact Me</strong> 
-  </font>
 
 <hr style="border: 1px solid gray;">
 
@@ -136,7 +133,7 @@ date: 2023-09-11 10:15:38
 </div>
 
 <br/>
-I am proficient in opening and closing Bloomberg Terminal, Yahoo Finance API, Github, Excel, PowerPoint, and Word <br/>
+I am proficient in opening and closing Financial Terminal, Jupter Notebook, Github, C++ and Microsoft Suite <br/>
 before checking and updating them 20 times a day😄.
 
 
