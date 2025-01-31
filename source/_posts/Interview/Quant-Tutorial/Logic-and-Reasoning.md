@@ -4,7 +4,7 @@ tags: Interview
 date: 2023-09-11 10:15:38
 ---
 
-*<small>[Home](/About/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Logic and Reasoning](/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)</small>***
+*<small>[Home](/About/index.html) > [Knowledge Basement](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Logic and Reasoning](/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)</small>***
 
 <head>
     <script type="text/javascript" async

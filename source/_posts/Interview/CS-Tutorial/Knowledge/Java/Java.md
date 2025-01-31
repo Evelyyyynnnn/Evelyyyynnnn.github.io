@@ -1,5 +1,7 @@
 
 
+
+
 Java中println和print的区别：println一行输出之后可以自动换行，print不能
 
 System.out对应的是System.err(报错提醒)

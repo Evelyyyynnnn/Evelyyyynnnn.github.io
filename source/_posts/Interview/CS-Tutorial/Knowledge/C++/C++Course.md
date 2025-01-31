@@ -1,4 +1,7 @@
-
+---
+tags: Interview
+date: 2023-09-11 10:15:38
+---
 
 
 ## Course 1: [Google Data Structures & Algorithms](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)

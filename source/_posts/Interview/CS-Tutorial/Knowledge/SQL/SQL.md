@@ -1,3 +1,8 @@
+---
+tags: Interview
+date: 2023-09-11 10:15:38
+---
+
 Here I will record some ordinary SQL questions for exercise and my way to exercise SQL is always to *learn from the real questions*
 
 ```sql
