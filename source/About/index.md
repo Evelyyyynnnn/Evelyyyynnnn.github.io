@@ -80,7 +80,7 @@ date: 2023-09-11 10:15:38
   <br>
   <font size="6">
     <strong> 
-        Welcome to my <a href="[/index.html](https://www.linkedin.com/in/evelyyyn-du/)">LinkedInsite</a> and have a <a href="mailto:wd275@cornell.edu">coffee chat</a> with me!
+        Welcome to my <a href="https://www.linkedin.com/in/evelyyyn-du/">LinkedIn</a> and have a <a href="mailto:wd275@cornell.edu">coffee chat</a> with me!
     </strong>
   </font>
 
@@ -143,7 +143,7 @@ before checking and updating them 20 times a day😄.
 <div style="text-align: left;">
 
 <br>
-<font size="5">
+<font size="8">
 <strong>📝Note</strong> 
 </font>
 <hr style="border: 1px solid gray;">
