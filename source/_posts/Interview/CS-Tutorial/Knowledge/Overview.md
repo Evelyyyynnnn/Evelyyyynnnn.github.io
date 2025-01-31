@@ -9,7 +9,7 @@ date: 2023-09-11 10:15:38
 
 Hi,for this part, I will record the learning pace of myself about the following programming language.
 
-### Content
+## Content
 
 - [C++](/2023/09/11/Interview/CS-Tutorial/Knowledge/C++/C++/index.html)
 - [Java](/2023/09/11/Interview/CS-Tutorial/Knowledge/Java/Java/index.html)
@@ -18,7 +18,7 @@ Hi,for this part, I will record the learning pace of myself about the following 
 - [SQL](/2023/09/11/Interview/CS-Tutorial/Knowledge/SQL/SQL/index.html)
 
 
-### Overview
+## Overview
 
 > This page I will also write down some basic knowledge about the algo
 
@@ -27,7 +27,7 @@ Hi,for this part, I will record the learning pace of myself about the following 
 - Square Brackets	[]	中括号
 - Angle Brackets  <> 尖括号
 
-#### 1.Data Structure
+## 1.Data Structure
 
 ```Python
 stack=Stack()
@@ -47,19 +47,17 @@ bag.remove(1)
 #不讲顺序
 ```
 
-##### 2.2 Compile Langue
+## 2 Compile Langue
 
-###### (1) java
+### (1) java
 
 - (从.java到.class):javac HelloWorld.java
 - java -cp .. HW1.HelloWorld args[0] args[1] 
 > HW1 为上层目录
 
-###### (2) C++:  
+### (2) C++:  
 - gcc helloWorld.c
 
-
-#### 3.C++：
 
 （1） 在C++中，我们经常在开始写代码之前加入：
 using namespace std;
@@ -90,11 +88,11 @@ void function2(int a, string b) {
 
 
 
-#### 4.Python
+### 4.Python
 
 
-#### 5.Java
+### 5.Java
 
 
 
-#### 6.SQL
+### 6.SQL

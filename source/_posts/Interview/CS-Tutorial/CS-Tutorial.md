@@ -31,7 +31,7 @@ date: 2023-09-11 10:15:38
 
 In this series, I will mainly cover 2 parts of CS knowledge. 
 - The first is about the [systematic knowledge](/2023/09/11/Interview/CS-Tutorial/Knowledge/Overview/index.html) 
-- The second is about the [leetcode question](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/Overview/index.html).
+- The second is about the leetcode question.
 
 You can jump to the related link and your also refer  to this [book](/pdf/LeetCode101.pdf).The basement comes from my experiences and learning process.
 
