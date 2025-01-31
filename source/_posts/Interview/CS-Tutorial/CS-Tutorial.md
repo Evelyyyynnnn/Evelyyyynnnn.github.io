@@ -90,4 +90,4 @@ You can jump to the related link and your also refer  to this [book](/pdf/LeetCo
 
 ### 16.Interesting Qs
 
-- [Interesting Qs](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/16.Interesting-Qs/overview/index.html)
+- [Interesting Qs](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/16.Interesting-Qs/Overview2/index.html)
