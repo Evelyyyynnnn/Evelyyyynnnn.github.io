@@ -3,7 +3,7 @@ title: CS Exercise-Introduction
 tags: Interview
 date: 2023-09-11 10:15:38
 ---
-*<small>[Home](/About/index.html) > [Interview](/tags/Interview/index.html) > **[CS Tutorial](/2023/09/11/Interview/Tutorial/index.html)</small>***
+*<small>[Home](/About/index.html) > [Interview](/tags/Interview/index.html) > **[CS Tutorial](/2023/09/11/Interview/CS-Tutorial/CS-Tutorial/index.html)</small>***
 
 
 <style>
@@ -27,29 +27,20 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-In this series, I will mainly cover 2 parts of interview questions.The basement comes from my experiences and learning process.The first part is  parts of CS Coding.The first is about the [systematic knowledge](/2023/09/11/Interview/CS-Tutorial/Knowledge/Overview/index.html) and the second is about the [leetcode question exercise](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/Overview/index.html)
+<img src="/picture/mindmap.png" class="shake-on-hover" style="zoom: 33%;" />
 
-Knowledge:
+In this series, I will mainly cover 2 parts of CS knowledge. The basement comes from my experiences and learning process.The first is about the [systematic knowledge](/2023/09/11/Interview/CS-Tutorial/Knowledge/Overview/index.html) and the second is about the [leetcode question](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/Overview/index.html).You can jump to the related link and your also refer  to this [book](/pdf/LeetCode101.pdf).
 
-Leetcode Question Exercise:
-- [Logic Reasoning](/2023/09/11/Interview/Quant-Tutorial/CS-Tutorial/Interview-Qs/Logic-and-Reasoning/index.html)
-- [Statistical Mathematics](/2023/09/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)
-- [Financial Modeling](/2023/09/11/Interview/Quant-Tutorial/Financial-Modeling/index.html)
-- [Coding Question](/2023/09/11/Interview/Quant-Tutorial/Coding-Qs/index.html)
-- [Behavior Question](/2023/09/11/Interview/Quant-Tutorial/Behavior-Qs/index.html)
+## Systematic Knowledge:
+- [C++](/2023/09/11/Interview/CS-Tutorial/Knowledge/C++/C++/index.html)
+- [Java](/2023/09/11/Interview/CS-Tutorial/Knowledge/Java/Java/index.html)
+- [Operation](/2023/09/11/Interview/CS-Tutorial/Knowledge/Operation/Operation/index.html)
+- [Python](/2023/09/11/Interview/CS-Tutorial/Knowledge/Python/Python/index.html)
+- [R](/2023/09/11/Interview/CS-Tutorial/Knowledge/R/R/index.html)
+- [SQL](/2023/09/11/Interview/CS-Tutorial/Knowledge/SQL/SQL/index.html)
+- [Web Development](/2023/09/11/Interview/CS-Tutorial/Knowledge/Web_Development/Web_Development/index.html)
 
-
-<img src="https://s2.loli.net/2024/07/20/TVCrsJG6ERte5u3.png" class="shake-on-hover" style="zoom: 80%;" />
-
-
-In this series, I will mainly cover what I've exercised for coding for more learners,you can jump to the related link and your also refer  to this [book](/pdf/LeetCode101.pdf).
-
-- Here is some [overview](/2023/09/11/Interview/CS-Tutorial/Overview/index.html) exercise and some of this tutorial will be noted by Chinese
-- If you want to learn more systematic knowledge about the specific programming language,you could jump directly through this [link](/2023/09/11/Interview/CS-Tutorial/Knowledge/Overview/index.html)
-
-
-## Coding Qs Menu
-
+## Leetcode Question Menu:
 ### 1. The Simplest Greedy Algo
 - [Array](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Array/index.html)
 - [String](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/String/index.html)
