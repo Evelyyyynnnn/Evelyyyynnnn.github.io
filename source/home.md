@@ -75,7 +75,7 @@ date: 2023-09-02 10:15:38
 </style>
 
 
-*<small> Back to [About Me](/About/index.html) > [Project](/tags/Project/index.html) >[Interview](/tags/Interview/index.html)>  [Note](/tags/Note/index.html) > [Post](/About/index.html)</small>*
+*<small> Back to [About Me](/About/index.html) > [Tech Project](/tags/Project/index.html) >[Knowledge Basement](/tags/Interview/index.html)>  [Note](/tags/Note/index.html) > [Post](/About/index.html)</small>*
 
 <div style="background-color: #f2f2f2; padding: 20px;">
     <div style="display: flex; align-items: center; justify-content: center; ">

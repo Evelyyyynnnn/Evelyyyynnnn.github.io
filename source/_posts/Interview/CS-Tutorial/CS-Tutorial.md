@@ -27,7 +27,7 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-<img src="/picture/mindmap.png" class="shake-on-hover" style="zoom: 33%;" />
+<img src="/picture/mindmap.jpg" class="shake-on-hover" style="zoom: 33%;" />
 
 In this series, I will mainly cover 2 parts of CS knowledge. The basement comes from my experiences and learning process.The first is about the [systematic knowledge](/2023/09/11/Interview/CS-Tutorial/Knowledge/Overview/index.html) and the second is about the [leetcode question](/2023/09/11/Interview/CS-Tutorial/Interview-Qs/Overview/index.html).You can jump to the related link and your also refer  to this [book](/pdf/LeetCode101.pdf).
 
