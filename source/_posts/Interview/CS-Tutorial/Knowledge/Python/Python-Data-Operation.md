@@ -3,6 +3,8 @@
 data['DateTime'] = pd.to_datetime(data['DateTime'])
 #use copy to avoid the influence to old databasemen
 filtered_data = data[data['DateTime'] > '2020-12-31'].copy()  
+filtered_data = data[data['DateTime'] > '2020-12-31'].copy(deep=True)
+#准确来说只有deep copy之下原数据才不受到影响
 filtered_data.head()
 
 

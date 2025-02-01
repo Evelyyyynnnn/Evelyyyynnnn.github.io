@@ -27,35 +27,15 @@ Hi,for this part, I will record the learning pace of myself about the following 
 - Square Brackets	[]	中括号
 - Angle Brackets  <> 尖括号
 
-## 1.Data Structure
 
-```Python
-stack=Stack()
-stack.push(1) #压入为顶元素
-stack.pop() #弹出最后一个元素
-#讲顺序，单一方向：先进先出
 
-queue=Queue()
-queue.append(1)#尾部加1
-queue.popleft()#左端弹出
-queue.pop()#右端弹出
-#双向，讲顺序
-
-bag=Bag()
-bag.add(1)
-bag.remove(1)
-#不讲顺序
-```
-
-## 2 Compile Langue
-
-### (1) java
+### 1. java
 
 - (从.java到.class):javac HelloWorld.java
 - java -cp .. HW1.HelloWorld args[0] args[1] 
 > HW1 为上层目录
 
-### (2) C++:  
+### 2. C++:  
 - gcc helloWorld.c
 
 
@@ -88,11 +68,11 @@ void function2(int a, string b) {
 
 
 
-### 4.Python
+### 3.Python
 
 
-### 5.Java
+### 4.Java
 
 
 
-### 6.SQL
+### 5.SQL
