@@ -90,14 +90,14 @@ date: 2023-09-11 10:15:38
 <hr style="border: 1px solid gray;">
 
 <div class="button-container">
-  <a href="https://vicky-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
-  <a href="https://viiiikedy-academy.vercel.app/" class="button">My Academic Site</a>
+  <a href="https://evelyn-chinese-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
+  <a href=" http://evelynacademy.vercel.app/" class="button">My Academic Site</a>
   <a href="https://jekyll-typing-artist.vercel.app/" class="button">My Art Design Website</a>
   <a href="https://korean-book.netlify.app" class="button">My Korean Learning Book</a>
-  <a href="https://vicky-youtube-video.netlify.app" class="button">My Video Site</a><br/>
+  <a href="https://www.youtube.com/@viiiiiiiickky" class="button">My Video Site</a><br/>
   <a href="mailto:wd275@cornell.edu" class="button">wd275@cornell.edu</a>
   <a href="https://github.com/Viiiikedy" class="button">Github</a>
-  <a href="https://www.instagram.com/viii.iiicky/" class="button">Instagram</a>
+  <a href="https://www.instagram.com/evelynnnnn.du?igsh=MWNpczJ3MmtlOGhnaA%3D%3D&utm_source=qr" class="button">Instagram</a>
 
 
 <br>
