@@ -1,7 +1,7 @@
 ---
 title: Economy & Business-Automatic Trading & Cryptocurrency-Decentralized Exchange
 tags: Project 
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 <style>
     .image-container {
@@ -46,11 +46,11 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > **[Decentralized Cryptocurrency Excahnge](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html)</small>***
+*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2025/04/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2025/04/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > **[Decentralized Cryptocurrency Excahnge](/2025/04/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html)</small>***
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
-        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <li><a href="/2025/04/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <a href="/2025/04/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2025/04/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 

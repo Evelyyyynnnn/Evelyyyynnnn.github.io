@@ -1,9 +1,9 @@
 ---
 title: At the begining
 tags: Post
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
-*<small>[Home](/About/index.html) > [Post](/tags/Post/index.html) > **[Young](/2023/09/11/Post/Young/index.html)</small>***
+*<small>[Home](/About/index.html) > [Post](/tags/Post/index.html) > **[Young](/2025/04/11/Post/Young/index.html)</small>***
 
 <h3 id="power-bi-section"></h3>
 <div align="center">

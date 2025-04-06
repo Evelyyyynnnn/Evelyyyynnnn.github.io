@@ -1,9 +1,9 @@
 ---
 title: In the Middle 
 tags: Post
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
-*<small>[Home](/About/index.html) > [Post](/tags/Post/index.html) > **[Middle-Aged](/2023/09/11/Post/Middle-Aged/index.html)</small>***
+*<small>[Home](/About/index.html) > [Post](/tags/Post/index.html) > **[Middle-Aged](/2025/04/11/Post/Middle-Aged/index.html)</small>***
 
 <div align="center">
     <img src="/picture/angry.png" width="300" height="300"/>

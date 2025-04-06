@@ -1,10 +1,10 @@
 ---
 title: Quant Exercise-Logic Reasoning
 tags: Interview
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 
-*<small>[Home](/About/index.html) > [Knowledge Basement](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Logic and Reasoning](/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)</small>***
+*<small>[Home](/About/index.html) > [Knowledge Basement](/tags/Interview/index.html) > [Quant Tutorial](/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Logic and Reasoning](/2025/04/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)</small>***
 
 <head>
     <script type="text/javascript" async
@@ -58,7 +58,6 @@ Let x be an integer between 1 and 10'2, what is the probability that the cubic o
 (*Hint: The last two digils of x3 only depend on the last two digits of x.)
 -- [Click here to see the my solution](https://s2.loli.net/2023/09/28/fDI3pd526MQljb9.jpg)
 -- Source:[Green Book P71-P72](/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf)
-
 
 
 

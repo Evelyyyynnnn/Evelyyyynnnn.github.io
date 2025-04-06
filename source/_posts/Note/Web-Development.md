@@ -1,9 +1,9 @@
 ---
 title: Web Development
 tags: Note
-date: 2023-09-11 
+date: 2025-04-11 
 ---
-*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[Web Development](/2023/09/11/Note笔记/Web-Development/index.html)</small>***
+*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[Web Development](/2025/04/11/Note/Web-Development/index.html)</small>***
 
 ## Web Development Method
 ### 1. [Github Page](https://github.com/)

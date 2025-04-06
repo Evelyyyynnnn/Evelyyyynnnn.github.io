@@ -1,7 +1,7 @@
 ---
 title: Design-System Design
 tags: Project
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 
 <style>
@@ -62,13 +62,13 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > **[System Design](/2023/09/11/Project/Design/System-Design/index.html)</small>***
+*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Design](/2025/04/11/Project/Design/Design/index.html) > **[System Design](/2025/04/11/Project/Design/System-Design/index.html)</small>***
 
 
 <ol class="menu-list">
     <div>
-        <li><strong><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
-        <a href="/2023/09/11/Project/Design/Educational-Game/index.html" class="menu-item">Educational Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <li><strong><a href="/2025/04/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
+        <a href="/2025/04/11/Project/Design/Educational-Game/index.html" class="menu-item">Educational Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2025/04/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 

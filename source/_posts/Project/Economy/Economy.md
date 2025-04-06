@@ -1,10 +1,10 @@
 ---
 title: Economy & Business-Overview
 tags: Project
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 
-*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > **[Economy&Business](/2023/09/11/Project/Economy/Economy/index.html)</small>***
+*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > **[Economy&Business](/2025/04/11/Project/Economy/Economy/index.html)</small>***
 
 <style>
     

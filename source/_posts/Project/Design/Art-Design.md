@@ -1,7 +1,7 @@
 ---
 title: Design-Art Design
 tags: Project
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 
 <style>
@@ -65,7 +65,7 @@ date: 2023-09-11 10:15:38
   }
 </style>
 
-*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > **[Art Design](/2023/09/11/Project/Design/Art-Design/index.html)</small>***
+*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Design](/2025/04/11/Project/Design/Design/index.html) > **[Art Design](/2025/04/11/Project/Design/Art-Design/index.html)</small>***
 
 
 ### Column

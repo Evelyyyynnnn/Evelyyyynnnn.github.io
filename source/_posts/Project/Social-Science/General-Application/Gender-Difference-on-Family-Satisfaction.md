@@ -1,7 +1,7 @@
 ---
 title: Social Science-General Application-Gender Equality
 tags: Social Science
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 <style>
     .image-container {

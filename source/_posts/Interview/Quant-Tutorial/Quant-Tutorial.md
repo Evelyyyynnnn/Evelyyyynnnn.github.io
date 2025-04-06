@@ -1,9 +1,9 @@
 ---
 title: Quant Exercise-Overview
 tags: Interview 
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
-*<small>[Home](/About/index.html) > [Knowledge Basement](/tags/Interview/index.html) > **[Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)</small>***
+*<small>[Home](/About/index.html) > [Knowledge Basement](/tags/Interview/index.html) > **[Quant Tutorial](/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)</small>***
 
 <style>
     @keyframes shake {
@@ -27,12 +27,11 @@ date: 2023-09-11 10:15:38
 </style>
 
 In this series, I will mainly cover the following parts of Quantitative Interview and you can jump to the link:
-- [Logic Reasoning](/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)
-- [Statistical Mathematics](/2023/09/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)
-- [Financial Modeling](/2023/09/11/Interview/Quant-Tutorial/Financial-Modeling/index.html)
-- [Coding Question](/2023/09/11/Interview/Quant-Tutorial/Coding-Qs/index.html)
-- [Behavior Question](/2023/09/11/Interview/Quant-Tutorial/Behavior-Qs/index.html)
-
+- [Logic Reasoning](/2025/04/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)
+- [Statistical Mathematics](/2025/04/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)
+- [Financial Modeling](/2025/04/11/Interview/Quant-Tutorial/Financial-Modeling/index.html)
+- [Coding Question](/2025/04/11/Interview/Quant-Tutorial/Coding-Qs/index.html)
+- [Behavior Question](/2025/04/11/Interview/Quant-Tutorial/Behavior-Qs/index.html)
 
 <img src="https://s2.loli.net/2023/09/11/h7EBdNkvPV21Ly4.jpg" class="shake-on-hover" style="zoom: 33%;" />
 

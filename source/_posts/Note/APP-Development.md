@@ -1,9 +1,9 @@
 ---
 title: App Development
 tags: Note
-date: 2023-09-11 
+date: 2025-04-11 
 ---
-*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[APP Development](/2023/09/11/Note笔记/APP-Development/index.html)</small>***
+*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[APP Development](/2025/04/11/Note/APP-Development/index.html)</small>***
 
 Here  I just record some useful tutorial for APP Development 
 ## 1. IOS Application

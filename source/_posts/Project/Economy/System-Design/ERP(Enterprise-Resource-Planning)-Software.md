@@ -1,7 +1,7 @@
 ---
 title: Economy & Business-System Design-ERP(Enterprise Resource Planning) Software
 tags: Project
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 <style>
     .menu-item {
@@ -41,12 +41,12 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) > **[ERP(Enterprise Resource Planning) Software](/2023/09/11/Project/Economy/System-Design/Crawling-and-Updating/index.html)</small>***
+*<small>[Home](/About/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2025/04/11/Project/Economy/Economy/index.html) > [System Design](/2025/04/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) > **[ERP(Enterprise Resource Planning) Software](/2025/04/11/Project/Economy/System-Design/Crawling-and-Updating/index.html)</small>***
 
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
-        </strong><a href="/2023/09/11/Project/Economy/System-Design/Crawling-and-Updating/index.html" class="menu-item">Crawling & Updating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong></li>
+        <li><a href="/2025/04/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
+        </strong><a href="/2025/04/11/Project/Economy/System-Design/Crawling-and-Updating/index.html" class="menu-item">Crawling & Updating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong></li>
     </div>
 </ol>
 

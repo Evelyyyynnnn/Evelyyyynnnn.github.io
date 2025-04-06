@@ -1,9 +1,9 @@
 ---
 title: Game Design
 tags: Note
-date: 2023-09-11 
+date: 2025-04-11 
 ---
-*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[Game Design](/2023/09/11/Note笔记/Game-Design/index.html)</small>***
+*<small>[Home](/About/index.html) > [Note](/tags/Note/index.html) > **[Game Design](/2025/04/11/Note/Game-Design/index.html)</small>***
 
 
 Here I will record my understanding and designing project of game.
