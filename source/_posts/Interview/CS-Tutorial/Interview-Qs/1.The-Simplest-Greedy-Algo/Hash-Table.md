@@ -1,7 +1,7 @@
 ---
 title: CS Exercise-The Simplest Greedy Algo
 tags: Interview
-date: 2023-09-11 10:15:38
+date: 2025-04-11 10:15:38
 ---
 
 # Hash Table
