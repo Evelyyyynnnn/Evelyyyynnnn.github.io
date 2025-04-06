@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h3 id="Other-Software"><a href="#Other-Software" class="headerlink" title="Other Software"></a>Other Software</h3><h4 id="1-VS-Code"><a href="#1-VS-Code" class="headerlink" title="1.VS Code"></a>1.VS Code</h4><ul>
+<li><code>cmd+ O</code>: open multiple windows</li>
+<li><code>command+shift+P</code>: open Terminal -(Select the “Preview” option)</li>
+<li><code>cmd+单引号</code>: open Terminal</li>
+<li><code>control+enter </code>:execute code</li>
+</ul>
+<h4 id="2-Mac"><a href="#2-Mac" class="headerlink" title="2.Mac"></a>2.Mac</h4><h5 id="2-1-VIM"><a href="#2-1-VIM" class="headerlink" title="2.1 VIM"></a>2.1 VIM</h5><ul>
+<li><code>fn(earth)+E</code>: emoji</li>
+</ul>
+<h4 id="Terminal-Overview"><a href="#Terminal-Overview" class="headerlink" title="Terminal Overview"></a>Terminal Overview</h4><h5 id="1-General"><a href="#1-General" class="headerlink" title="1. General"></a>1. General</h5><ul>
+<li>Open Terminal: <code>command +space</code></li>
+<li>find the dict location：<code>cd</code></li>
+<li>print the path of current dict:<code>pwd</code></li>
+<li>print all the fiels in the current dict:<code>ls</code></li>
+<li>creat new file: <code>touch</code></li>
+<li>create new dict: <code>mkdir</code></li>
+<li>remove files&#x2F;dict:<code>rm</code></li>
+<li>move file&#x2F;dict:<code>mv</code></li>
+<li>copy file:<code>cp</code></li>
+<li>space problem: <code>add quote</code></li>
+</ul>
+<h5 id="2-Files"><a href="#2-Files" class="headerlink" title="2.Files"></a>2.Files</h5><ul>
+<li>write something into txt file: <code>echo</code></li>
+<li>show the content in txt file: <code>cat</code></li>
+<li>delete all the content in txt file <code>truncate -s 0</code></li>
+<li>replace&#x2F;print content <code>sed</code></li>
+<li>print specific content <code>awk</code></li>
+</ul>
+<h5 id="3-Regex"><a href="#3-Regex" class="headerlink" title="3.Regex"></a>3.Regex</h5><ul>
+<li><code> grep -E</code></li>
+<li><code>grep-Ei</code></li>
+</ul>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;specific_word&quot; | grep -E &#x27;^specific_word$&#x27;   # 匹配整个字符串必须完全等于 &quot;specific_word&quot;</span><br><span class="line">echo &quot;SPECIFIC_WORD&quot; | grep -Ei &#x27;^specific_word$&#x27;  # 匹配整个字符串 &quot;specific_word&quot;（忽略大小写）</span><br><span class="line">echo &quot;A&quot; | grep -E &#x27;.&#x27;                             # 匹配任何非空字符</span><br><span class="line">echo &quot;The number is 7&quot; | grep -E &#x27;[0-9]&#x27;           # 匹配至少包含一个数字的行</span><br><span class="line">echo &quot;Order 12345 is confirmed&quot; | grep -E &#x27;[0-9]+&#x27; # 匹配一个或多个连续的数字</span><br><span class="line">echo &quot;abc123&quot; | grep -E &#x27;[[:alnum:]]&#x27;              # 匹配至少包含一个字母或数字</span><br><span class="line">echo &quot;Hello World&quot; | grep -E &#x27;[[:space:]]&#x27;         # 匹配至少包含一个空格的行</span><br><span class="line">echo &quot;start_of_string is here&quot; | grep -E &#x27;^start_of_string&#x27; # 匹配以 &quot;start_of_string&quot; 开头的行</span><br><span class="line">echo &quot;This ends with end_of_string&quot; | grep -E &#x27;end_of_string$&#x27; # 匹配以 &quot;end_of_string&quot; 结尾的行</span><br><span class="line">echo &quot;I choose option1&quot; | grep -E &#x27;(option1|option2)&#x27; # 匹配 &quot;option1&quot; 或 &quot;option2&quot;</span><br><span class="line"></span><br><span class="line">echo &#123;1..5&#125;   # Expands to: 1 2 3 4 5</span><br><span class="line">echo &#123;a..e&#125;   # Expands to: a b c d e</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-loop"><a href="#4-loop" class="headerlink" title="4.loop"></a>4.loop</h5><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"># 使用 for 循环写入 Line1-Line10 到 text.txt</span><br><span class="line">for i in &#123;1..10&#125;; do echo &quot;Line $i&quot; &gt;&gt; text.txt; done  # 逐行追加 &quot;Line X&quot; 到 text.txt</span><br><span class="line"></span><br><span class="line"># use for to write the fruits into text.txt</span><br><span class="line">for item in apple banana cherry; do</span><br><span class="line">    echo &quot;Fruit: $item&quot;</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">#iterate the files in the dict</span><br><span class="line">for file in *.txt; do</span><br><span class="line">    echo &quot;Processing $file&quot;</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># while 循环逐行读取文件内容</span><br><span class="line">while read line; do</span><br><span class="line">    echo &quot;Line: $line&quot;</span><br><span class="line">done &lt; text.txt  # 逐行读取 text.txt 并输出</span><br><span class="line"></span><br><span class="line"># set the ending point of while</span><br><span class="line">count=1</span><br><span class="line">while [ $count -le 5 ]; do</span><br><span class="line">    echo &quot;Count: $count&quot;</span><br><span class="line">    ((count++))</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># use until to set the ending point</span><br><span class="line">count=1</span><br><span class="line">until [ $count -gt 5 ]; do</span><br><span class="line">    echo &quot;Count: $count&quot;</span><br><span class="line">    ((count++))</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># use list to print</span><br><span class="line">list=(&quot;apple&quot; &quot;banana&quot; &quot;cherry&quot;)</span><br><span class="line">echo &quot;$&#123;list[@]&#125;&quot; # all</span><br><span class="line">echo &quot;$&#123;list[0]&#125;&quot; # the first</span><br><span class="line">list=$(seq 1 5) # from the 1st to the 5th</span><br><span class="line">echo &quot;$list&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-Application"><a href="#5-Application" class="headerlink" title="5. Application"></a>5. Application</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">mkdir /Users/evelyndu/new_dict</span><br><span class="line">cp test.csv /Users/evelyndu/ <span class="comment">#no change on the file name</span></span><br><span class="line">cp test.csv /Users/evelyndu/test_backup <span class="comment">#change on the file name</span></span><br><span class="line">cp -R /Users/evelyndu/Downloads /Users/evelyndu/Downloads_backup</span><br><span class="line"></span><br><span class="line">echo <span class="string">&quot;Line&quot;</span> &gt;&gt;test.txt</span><br><span class="line">truncate -s <span class="number">0</span> test.txt</span><br><span class="line">sed <span class="string">&#x27;s/apple/banana&#x27;</span> test.txt <span class="comment">#first apple for each line</span></span><br><span class="line">sed <span class="string">&#x27;s/apple/banana/g&#x27;</span> test.txt <span class="comment"># all apples for each line</span></span><br><span class="line">sed -n <span class="string">&#x27;5p&#x27;</span> test.txt <span class="comment">#print 5th line</span></span><br><span class="line">sed <span class="string">&#x27;3d&#x27;</span> test.txt delete 3rd line</span><br><span class="line">sed <span class="string">&#x27;3i\foo\&#x27;  test.txt  </span></span><br><span class="line"><span class="string">#insert the new 3rd row</span></span><br><span class="line"><span class="string">awk &#x27;</span>&#123;<span class="built_in">print</span> $<span class="number">2</span>, $<span class="number">4</span>&#125;<span class="string">&#x27; students.txt</span></span><br><span class="line"><span class="string">awk &#x27;</span>$<span class="number">3</span> &gt; <span class="number">50</span> &#123;<span class="built_in">print</span> $<span class="number">1</span>, $<span class="number">3</span>&#125;<span class="string">&#x27; numbers.txt</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="6-Example"><a href="#6-Example" class="headerlink" title="6.Example"></a>6.Example</h5><p>To extract valid phone numbers from file.txt that match the required formats (xxx) xxx-xxxx or xxx-xxx-xxxx, we can use the grep command with a regular expression.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -E <span class="string">&quot;^(\([0-9]&#123;3&#125;)\ [0-9]&#123;3&#125;-[0-9]&#123;4&#125;|[0-9]&#123;3&#125;-[0-9]&#123;3&#125;-[0-9]&#123;4&#125;))$&quot;</span></span><br></pre></td></tr></table></figure>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

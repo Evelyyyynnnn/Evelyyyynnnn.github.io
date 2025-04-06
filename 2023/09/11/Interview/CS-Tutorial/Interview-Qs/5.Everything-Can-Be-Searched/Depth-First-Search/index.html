@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Exercise-5.Searching-Depth-First Search - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Depth-First-Search"><a href="#Depth-First-Search" class="headerlink" title="Depth-First Search"></a>Depth-First Search</h1><h2 id="1-Easy"><a href="#1-Easy" class="headerlink" title="1.Easy"></a>1.Easy</h2><h3 id="101-Symmetric-Tree"><a href="#101-Symmetric-Tree" class="headerlink" title="(101)Symmetric Tree"></a>(101)Symmetric Tree</h3><h3 id="104-Maximum-Depth-of-Binary-Tree"><a href="#104-Maximum-Depth-of-Binary-Tree" class="headerlink" title="(104)Maximum Depth of Binary Tree"></a>(104)Maximum Depth of Binary Tree</h3><h3 id="226-Invert-Binary-Tree"><a href="#226-Invert-Binary-Tree" class="headerlink" title="(226)Invert Binary Tree"></a>(226)Invert Binary Tree</h3><h3 id="543-Diameter-of-Binary-Tree"><a href="#543-Diameter-of-Binary-Tree" class="headerlink" title="(543)Diameter of Binary Tree"></a>(543)Diameter of Binary Tree</h3><h3 id="617-Merge-Two-Binary-Trees"><a href="#617-Merge-Two-Binary-Trees" class="headerlink" title="(617)Merge Two Binary Trees"></a>(617)Merge Two Binary Trees</h3><h2 id="2-Medium"><a href="#2-Medium" class="headerlink" title="2.Medium"></a>2.Medium</h2><h3 id="94-Binary-Tree-Inorder-Traversal"><a href="#94-Binary-Tree-Inorder-Traversal" class="headerlink" title="(94)Binary Tree Inorder Traversal"></a>(94)Binary Tree Inorder Traversal</h3><h3 id="98-Validate-Binary-Search-Tree"><a href="#98-Validate-Binary-Search-Tree" class="headerlink" title="(98)Validate Binary Search Tree"></a>(98)Validate Binary Search Tree</h3><h3 id="114-Flatten-Binary-Tree-to-Linked-List"><a href="#114-Flatten-Binary-Tree-to-Linked-List" class="headerlink" title="(114)Flatten Binary Tree to Linked List"></a>(114)Flatten Binary Tree to Linked List</h3><h3 id="200-Number-of-Islands"><a href="#200-Number-of-Islands" class="headerlink" title="(200)Number of Islands"></a>(200)Number of Islands</h3><h3 id="207-Course-Schedule"><a href="#207-Course-Schedule" class="headerlink" title="(207)Course Schedule"></a>(207)Course Schedule</h3><h3 id="337-House-Robber-III"><a href="#337-House-Robber-III" class="headerlink" title="(337)House Robber III"></a>(337)House Robber III</h3><h3 id="399-Evaluate-Division"><a href="#399-Evaluate-Division" class="headerlink" title="(399)Evaluate Division"></a>(399)Evaluate Division</h3><h3 id="437-Path-Sum-III"><a href="#437-Path-Sum-III" class="headerlink" title="(437)Path Sum III"></a>(437)Path Sum III</h3><h3 id="538-Convert-BST-to-Greater-Tree"><a href="#538-Convert-BST-to-Greater-Tree" class="headerlink" title="(538)Convert BST to Greater Tree"></a>(538)Convert BST to Greater Tree</h3><h2 id="3-Hard"><a href="#3-Hard" class="headerlink" title="3.Hard"></a>3.Hard</h2><h3 id="124-Binary-Tree-Maximum-Path-Sum"><a href="#124-Binary-Tree-Maximum-Path-Sum" class="headerlink" title="(124)Binary Tree Maximum Path Sum"></a>(124)Binary Tree Maximum Path Sum</h3><h3 id="297-Serialize-and-Deserialize-Binary-Tree"><a href="#297-Serialize-and-Deserialize-Binary-Tree" class="headerlink" title="(297)Serialize and Deserialize Binary Tree"></a>(297)Serialize and Deserialize Binary Tree</h3>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

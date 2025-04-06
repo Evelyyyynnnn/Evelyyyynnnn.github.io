@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h2 id="Course-1-Google-Data-Structures-Algorithms"><a href="#Course-1-Google-Data-Structures-Algorithms" class="headerlink" title="Course 1: Google Data Structures &amp; Algorithms"></a>Course 1: <a target="_blank" rel="noopener" href="https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/">Google Data Structures &amp; Algorithms</a></h2><h3 id="Homework-1-Design-a-HashTable-and-HashMap"><a href="#Homework-1-Design-a-HashTable-and-HashMap" class="headerlink" title="Homework 1: Design a HashTable and HashMap"></a>Homework 1: Design a HashTable and HashMap</h3><div style="background-color: #f0f8ff; border: 2px solid #0078d7; padding: 15px; border-radius: 8px;">
+  <h3 style="color: #0078d7;">Time Complexity</h3>
+  <p>
+  
+<p>(1) When the bucket size&#x3D;1, the <em><strong>Insertion</strong></em> and <em><strong>Search</strong></em> are both <em><strong>O(1)</strong></em></p>
+<p>(2) When the bucket size&#x3D;N, the <em><strong>Insertion</strong></em> and <em><strong>Search</strong></em> are both <em><strong>O(N)</strong></em></p>
+<p>(3) When the bucket size is too large,Hash uses height-balanced binary search tree: </p>
+<ul>
+<li>average time complexity of insertion and search is O(1)</li>
+<li>the worst is O(logN) </p></div></li>
+</ul>
+<br>
+
+<blockquote>
+<p>bucket_index &#x3D; hash(key) % backet_count &#x3D; key % backet_count &#x3D; 1</p>
+</blockquote>
+<blockquote>
+<p>Key could be <em>tuple</em>, <em>ingeger</em> and <em>string</em></p>
+</blockquote>
+<blockquote>
+<p>If there is no <em>Hash Conflicts</em>,every value’s <em>bucket_index</em> is different, the bucket size will be 1 </p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">bucket_count = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hash</span>(<span class="number">1</span>) % bucket_count)  # 输出: <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hash</span>(<span class="number">11</span>) % bucket_count) # 输出: <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hash</span>(<span class="number">21</span>) % bucket_count) # 输出: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="2-HashTable"><a href="#2-HashTable" class="headerlink" title="2.HashTable"></a>2.HashTable</h4><h5 id="Exercise-1-Find-the-Duplicated-Results"><a href="#Exercise-1-Find-the-Duplicated-Results" class="headerlink" title="Exercise 1: Find the Duplicated Results"></a>Exercise 1: Find the Duplicated Results</h5><blockquote>
+<p>hashTable.count(key)是用来判断是否存在的</p>
+</blockquote>
+<blockquote>
+<p>for (int key:nums),<strong>key</strong> is the first</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">containsDuplicate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        unordered_set&lt;<span class="type">int</span>&gt; hashset;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> key: nums)&#123;</span><br><span class="line">            <span class="keyword">if</span> (hashset.<span class="built_in">count</span>(key)&gt;<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            hashset.<span class="built_in">insert</span>(key);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">containsDuplicate</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: bool</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        tank=<span class="built_in">set</span>()</span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums:</span><br><span class="line">            <span class="keyword">if</span> num <span class="keyword">in</span> tank:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            tank.add(num)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Exercise-2-Given-a-non-empty-array-of-integers-nums-every-element-appears-twice-except-for-one-Find-that-single-one"><a href="#Exercise-2-Given-a-non-empty-array-of-integers-nums-every-element-appears-twice-except-for-one-Find-that-single-one" class="headerlink" title="Exercise 2:Given a non-empty array of integers nums, every element appears twice except for one. Find that single one."></a>Exercise 2:Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.</h5><blockquote>
+<p>binary:二进制；XOR: exclusive OR</p>
+<ul>
+<li>result^&#x3D;nums —- result&#x3D;result^nums</li>
+<li>nums^nums&#x3D;0</li>
+<li>nums^0&#x3D;nums</li>
+<li>x^y^z &#x3D;(x^z)^y</li>
+<li>XOR is under the binary calculation</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">singleNumber</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> result=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> key : nums)&#123;</span><br><span class="line">            result^=key;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">singleNumber</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 使用位运算 XOR 来解决问题</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums:</span><br><span class="line">            result ^= num  <span class="comment"># XOR 操作</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<h5 id="Exercise-3-Given-two-integer-arrays-nums1-and-nums2-return-an-array-of-their-intersection-Each-element-in-the-result-must-be-unique-and-you-may-return-the-result-in-any-order"><a href="#Exercise-3-Given-two-integer-arrays-nums1-and-nums2-return-an-array-of-their-intersection-Each-element-in-the-result-must-be-unique-and-you-may-return-the-result-in-any-order" class="headerlink" title="Exercise 3: Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order."></a>Exercise 3: Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.</h5><p>Input: nums1 &#x3D; [1,2,2,1], nums2 &#x3D; [2,2]<br>Output: [2]</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">intersection</span>(<span class="params">self, nums1, nums2</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums1: List[int]</span></span><br><span class="line"><span class="string">        :type nums2: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[int]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        num1=<span class="built_in">set</span>(nums1)</span><br><span class="line">        num2=<span class="built_in">set</span>(nums2)</span><br><span class="line"><span class="comment"># Method 1:</span></span><br><span class="line"><span class="comment">#         for nu1 in num1:</span></span><br><span class="line"><span class="comment">#             if nu1 in num2:</span></span><br><span class="line"><span class="comment">#                 result.append(nu1)</span></span><br><span class="line"><span class="comment">#         return result</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 2:</span></span><br><span class="line">        result= <span class="built_in">list</span>(num1&amp;num2)</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">```   </span><br><span class="line"></span><br><span class="line">&gt; *unordered_set&lt;<span class="built_in">int</span>&gt;* set1 <span class="keyword">is</span> the way to create the <span class="built_in">set</span> <span class="keyword">in</span> C++</span><br><span class="line">- list1.push_back(key) <span class="keyword">is</span> to add elements <span class="keyword">in</span> <span class="built_in">list</span></span><br><span class="line">- set1.insert(key) <span class="keyword">is</span> to add elements <span class="keyword">in</span> <span class="built_in">set</span></span><br><span class="line">- set1.erase(key) <span class="keyword">is</span> to delet elements <span class="keyword">in</span> <span class="built_in">set</span>/<span class="built_in">list</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">```C++</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;<span class="built_in">int</span>&gt; intersection(vector&lt;<span class="built_in">int</span>&gt;&amp; nums1, vector&lt;<span class="built_in">int</span>&gt;&amp; nums2) &#123;</span><br><span class="line">        unordered_set&lt;<span class="built_in">int</span>&gt; set1(nums1.begin(),nums1.end());</span><br><span class="line">        unordered_set&lt;<span class="built_in">int</span>&gt; set2(nums2.begin(),nums2.end());</span><br><span class="line">        vector&lt;<span class="built_in">int</span>&gt; result;</span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">int</span> key: set1)&#123;</span><br><span class="line">            <span class="keyword">if</span> (set2.count(key)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                result.push_back(key);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>目前进度：<br><a target="_blank" rel="noopener" href="https://leetcode.com/explore/learn/card/hash-table/183/combination-with-other-algorithms/1131/">https://leetcode.com/explore/learn/card/hash-table/183/combination-with-other-algorithms/1131/</a></p>
+<h5 id="Exercise-4"><a href="#Exercise-4" class="headerlink" title="Exercise 4:"></a>Exercise 4:</h5><h5 id="Exercise-5-Other-Extensive-Exercise"><a href="#Exercise-5-Other-Extensive-Exercise" class="headerlink" title="Exercise 5:Other Extensive Exercise"></a>Exercise 5:Other Extensive Exercise</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;unordered_set&gt;</span></span><br><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> main() &#123;</span><br><span class="line">    unordered_set&lt;<span class="built_in">int</span>&gt; hashset;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;The size of hash set is: &quot;</span> &lt;&lt; hashset.size() &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (auto it = hashset.begin(); it != hashset.end(); ++it) &#123;</span><br><span class="line">        cout &lt;&lt; (*it) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;are in the hash set.&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    hashset.clear();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (hashset.empty()) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;hash set is empty now!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-HashMap"><a href="#2-HashMap" class="headerlink" title="2. HashMap"></a>2. HashMap</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyHashMap</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; hashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">MyHashMap</span>() &#123;</span><br><span class="line">        <span class="comment">// 初始化大小为 1000001 的数组，所有值设置为 -1（表示未映射）</span></span><br><span class="line">        hashMap.<span class="built_in">resize</span>(<span class="number">1000001</span>, <span class="number">-1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">put</span><span class="params">(<span class="type">int</span> key, <span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 将指定 key 对应的值更新为 value</span></span><br><span class="line">        hashMap[key] = value;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">get</span><span class="params">(<span class="type">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 如果 key 未被映射，返回 -1；否则返回对应的值</span></span><br><span class="line">        <span class="keyword">return</span> hashMap[key];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">remove</span><span class="params">(<span class="type">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 将指定 key 的映射值移除（设置为 -1）</span></span><br><span class="line">        hashMap[key] = <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>Note:</strong> private vs. public vs. protected</p>
+</blockquote>
+<p>在 C++ 类中，访问权限有三种：</p>
+<table>
+<thead>
+<tr>
+<th>访问修饰符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>private</code></td>
+<td>仅允许该类内部访问，外部不能访问或修改</td>
+</tr>
+<tr>
+<td><code>protected</code></td>
+<td>允许该类及其子类访问，但外部仍不能访问</td>
+</tr>
+<tr>
+<td><code>public</code></td>
+<td>允许任何代码访问（不建议数据成员设为 <code>public</code>）</td>
+</tr>
+</tbody></table>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyHashSet</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    vector&lt;<span class="type">bool</span>&gt; hashTable; <span class="comment">// 只能通过add、remove、contains访问</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">MyHashSet</span>() &#123; hashTable.<span class="built_in">resize</span>(<span class="number">1000001</span>, <span class="literal">false</span>); &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> key)</span> </span>&#123; hashTable[key] = <span class="literal">true</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">remove</span><span class="params">(<span class="type">int</span> key)</span> </span>&#123; hashTable[key] = <span class="literal">false</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">contains</span><span class="params">(<span class="type">int</span> key)</span> </span>&#123; <span class="keyword">return</span> hashTable[key]; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    MyHashSet mySet;</span><br><span class="line">    mySet.<span class="built_in">add</span>(<span class="number">5</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// ❌ 不能访问 private 成员</span></span><br><span class="line">    <span class="comment">// cout &lt;&lt; mySet.hashTable[5] &lt;&lt; endl;  // 错误：&#x27;hashTable&#x27; 是 private</span></span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; mySet.<span class="built_in">contains</span>(<span class="number">5</span>) &lt;&lt; endl;  <span class="comment">// ✅ 正确访问</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

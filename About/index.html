@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          👋Hi Guys! - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          
+<article id="page">
+  <h1>👋Hi Guys!</h1>
+  <style>
+.button-container {
+  text-align: center;
+}
+
+.button {
+  background-color: black;
+  border: 1px solid transparent;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 15px;
+  display: inline-block;
+  font-size: 17px;
+  color: white !important;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.button:hover {
+  background-color: rgba(0, 100, 200, 0.8);
+  color: white;
+}
+
+.bubble {
+  background-color: black;
+  border: 1px solid transparent;
+  text-align: center;
+  border-radius: 50%;
+  padding: 15px; /* 适当增加padding以确保内容居中 */
+  display: inline-block;
+  font-size: 17px;
+  color: white !important;
+  text-decoration: none;
+  margin: 15px;
+  width: 170px; /* 确保宽度和高度相等 */
+  height: 60px; /* 确保宽度和高度相等 */
+  line-height: 30px; /* 确保文字在圆形中居中 */
+}
+
+.bubble:hover {
+  background-color: rgba(0, 100, 200, 0.8);
+  color: white;
+}
+
+.shake-image:hover {
+  animation: shake 2s; /* 增加动画持续时间 */
+  animation-iteration-count: infinite;
+}
+
+.highlight-on-hover:hover {
+  color: red; /* 鼠标悬浮时变为红色 */
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
+}
+</style>
+
+<p><em><small> Back to <a href="/index.html">Homepage</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/tags/Interview/index.html">Interview</a> &gt; <a href="/tags/Note/index.html">Note</a> &gt; <a href="/About/index.html">Post</a></small></em></p>
+<div align="center">
+  <img src="https://s2.loli.net/2024/06/29/UYbwhLBKqmGaR9D.png" width="380" height="400" class="shake-image"/>  
+
+  <br>
+  <br>
+  <font size="6">
+    <strong> 
+        Welcome to my <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/evelyyyn-du/">LinkedIn</a> and have a <a href="mailto:wd275@cornell.edu">coffee chat</a> with me!
+    </strong>
+  </font>
+
+  <br>
+  <br>
+
+<hr style="border: 1px solid gray;">
+
+<div class="button-container">
+  <a target="_blank" rel="noopener" href="https://evelyn-chinese-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
+  <a href=" http://evelynacademy.vercel.app/" class="button">My Academic Site</a>
+  <a target="_blank" rel="noopener" href="https://jekyll-typing-artist.vercel.app/" class="button">My Art Design Website</a>
+  <a target="_blank" rel="noopener" href="https://korean-book.netlify.app" class="button">My Korean Learning Book</a>
+  <a target="_blank" rel="noopener" href="https://www.youtube.com/@viiiiiiiickky" class="button">My Video Site</a><br/>
+  <a href="mailto:wd275@cornell.edu" class="button">wd275@cornell.edu</a>
+  <a target="_blank" rel="noopener" href="https://github.com/Viiiikedy" class="button">Github</a>
+  <a target="_blank" rel="noopener" href="https://www.instagram.com/evelynnnnn.du?igsh=MWNpczJ3MmtlOGhnaA%3D%3D&utm_source=qr" class="button">Instagram</a>
+
+
+<br>
+<br>
+
+<!-- Map container -->
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- Initialize the map -->
+<script>
+  // Initialize the map and set its view to New York, USA
+  var map = L.map('map').setView([40.7128, -74.0060], 13);
+
+  // Add the OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a target="_blank" rel="noopener" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Add a marker at the center of New York
+  var marker = L.marker([40.7128, -74.0060]).addTo(map);
+
+  // Add a popup to the marker
+  marker.bindPopup("<b>New York, USA</b>").openPopup();
+</script>
+
+</div>
+
+<br/>
+I am proficient in opening and closing Financial Terminal, Jupter Notebook, Github, C++ and Microsoft Suite <br/>
+before checking and updating them 20 times a day😄.
+
+
+<div style="text-align: left;">
+
+
+</article>
+
+<div id="paginator">
+  
+</div>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

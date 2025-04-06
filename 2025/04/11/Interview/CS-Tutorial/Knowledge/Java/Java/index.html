@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p>Java中println和print的区别：println一行输出之后可以自动换行，print不能</p>
+<p>System.out对应的是System.err(报错提醒)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">hello</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[]arguments)</span> &#123; <span class="comment">//void means no return value</span></span><br><span class="line">		System.out.println(<span class="string">&quot;Hello World&quot;</span>);<span class="comment">//data type:boolean;int;double;String</span></span><br><span class="line">		System.out.println(<span class="string">&quot;Hello World2&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;Number of arguments: &quot;</span> + arguments.length);</span><br><span class="line">		<span class="comment">// Check if any arguments are passed</span></span><br><span class="line">        <span class="keyword">if</span> (arguments.length == <span class="number">0</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;No arguments provided.&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;Number of arguments: &quot;</span> + arguments.length);</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// Loop through the arguments array and print each argument</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arguments.length; i++) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;Argument &quot;</span> + i + <span class="string">&quot;: &quot;</span> + arguments[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F; Java中，有且仅有double a &#x3D; 5.0&#x2F;2.0&#x3D;2.5，其它都向下取整<br>int a&#x3D;(int)18.7;</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

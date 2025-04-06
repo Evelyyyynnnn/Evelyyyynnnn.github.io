@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Exercise-10.Data Structure-Biconnected Components - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Biconnected-Component"><a href="#Biconnected-Component" class="headerlink" title="Biconnected Component"></a>Biconnected Component</h1><h2 id="Systematic-Knowledge"><a href="#Systematic-Knowledge" class="headerlink" title="Systematic Knowledge:"></a>Systematic Knowledge:</h2><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/C++/C++/index.html">C++</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/Java/Java/index.html">Java</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/Operation/Operation/index.html">Operation</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/Python/Python/index.html">Python</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/R/R/index.html">R</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/SQL/SQL/index.html">SQL</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Knowledge/Web_Development/Web_Development/index.html">Web Development</a></li>
+</ul>
+<h2 id="Leetcode-Question-Menu"><a href="#Leetcode-Question-Menu" class="headerlink" title="Leetcode Question Menu:"></a>Leetcode Question Menu:</h2><h3 id="1-The-Simplest-Greedy-Algo"><a href="#1-The-Simplest-Greedy-Algo" class="headerlink" title="1. The Simplest Greedy Algo"></a>1. The Simplest Greedy Algo</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Array/index.html">Array</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/String/index.html">String</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Hash-Table/index.html">Hash Table</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Math/index.html">Math</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Sorting/index.html">Sorting</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/1.The-Simplest-Greedy-Algo/Greedy/index.html">Greedy</a></li>
+</ul>
+<h3 id="2-Mastering-Two-Pointers"><a href="#2-Mastering-Two-Pointers" class="headerlink" title="2. Mastering Two Pointers"></a>2. Mastering Two Pointers</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/2.Mastering-Two-Pointers/Two-Pointers/index.html">Two Pointers</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/2.Mastering-Two-Pointers/Prefix-Sum/index.html">Prefix Sum</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/2.Mastering-Two-Pointers/Stack/index.html">Stack</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/2.Mastering-Two-Pointers/Simulation/index.html">Simulation</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/2.Mastering-Two-Pointers/Linked-List/index.html">Linked List</a></li>
+</ul>
+<h3 id="3-Quick-Strike-Binary-Search"><a href="#3-Quick-Strike-Binary-Search" class="headerlink" title="3. Quick Strike! Binary Search"></a>3. Quick Strike! Binary Search</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/3.Quick-Strike!-Binary-Search/Binary-Search/index.html">Binary Search</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/3.Quick-Strike!-Binary-Search/Binary-Tree/index.html">Binary Tree</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/3.Quick-Strike!-Binary-Search/Tree/index.html">Tree</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/3.Quick-Strike!-Binary-Search/Heap-(Priority-Queue)/index.html">Heap (Priority Queue)</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/3.Quick-Strike!-Binary-Search/Sliding-Window/index.html">Sliding Window</a></li>
+</ul>
+<h3 id="4-All-Kinds-of-Sorting-Algorithms"><a href="#4-All-Kinds-of-Sorting-Algorithms" class="headerlink" title="4. All Kinds of Sorting Algorithms"></a>4. All Kinds of Sorting Algorithms</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/4.All-Kinds-of-Sorting-Algorithms/Quickselect/index.html">Quickselect</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/4.All-Kinds-of-Sorting-Algorithms/Merge-Sort/index.html">Merge Sort</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/4.All-Kinds-of-Sorting-Algorithms/Bucket-Sort/index.html">Bucket Sort</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/4.All-Kinds-of-Sorting-Algorithms/Counting-Sort/index.html">Counting Sort</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/4.All-Kinds-of-Sorting-Algorithms/Radix-Sort/index.html">Radix Sort</a></li>
+</ul>
+<h3 id="5-Everything-Can-Be-Searched"><a href="#5-Everything-Can-Be-Searched" class="headerlink" title="5. Everything Can Be Searched"></a>5. Everything Can Be Searched</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/5.Everything-Can-Be-Searched/Backtracking/index.html">Backtracking</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/5.Everything-Can-Be-Searched/Recursion/index.html">Recursion</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/5.Everything-Can-Be-Searched/Divide-and-Conquer/index.html">Divide and Conquer</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/5.Everything-Can-Be-Searched/Depth-First-Search/index.html">Depth-First Search</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/5.Everything-Can-Be-Searched/Breadth-First-Search/index.html">Breadth-First Search</a></li>
+</ul>
+<h3 id="15-Others"><a href="#15-Others" class="headerlink" title="15. Others"></a>15. Others</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Shortest-Path/index.html">Shortest Path</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Topological-Sort/index.html">Topological Sort</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Combinatorics/index.html">Combinatorics</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Rejection-Sampling/index.html">Rejection Sampling</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/15.Others/Shell/index.html">Shell</a></li>
+</ul>
+<h3 id="16-Interesting-Qs"><a href="#16-Interesting-Qs" class="headerlink" title="16.Interesting Qs"></a>16.Interesting Qs</h3><ul>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/Interview-Qs/16.Interesting-Qs/Overview2/index.html">Interesting Qs</a></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Exercise-The Simplest Greedy Algo - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><h2 id="1-Easy"><a href="#1-Easy" class="headerlink" title="1.Easy"></a>1.Easy</h2><h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="(1). Two Sum"></a>(1). Two Sum</h3><p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.假设一组矩阵中只有一组数对作为最终结果</p>
+<p>You can return the answer in any order.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">two_sum</span>(<span class="params">self, nums, target</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>, <span class="built_in">len</span>(nums)):</span><br><span class="line">                <span class="keyword">if</span> nums[j] == target - nums[i]:</span><br><span class="line">                    <span class="keyword">return</span> [i, j]</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Add-Two-Numbers"><a href="#2-Add-Two-Numbers" class="headerlink" title="(2)Add Two Numbers"></a>(2)Add Two Numbers</h3><h3 id="4-Median-of-Two-Sorted-Arrays"><a href="#4-Median-of-Two-Sorted-Arrays" class="headerlink" title="(4)Median of Two Sorted Arrays"></a>(4)Median of Two Sorted Arrays</h3><h3 id="26-Remove-Element-from-Sorted-Array"><a href="#26-Remove-Element-from-Sorted-Array" class="headerlink" title="(26) Remove Element from Sorted Array"></a>(26) Remove Element from Sorted Array</h3><p>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.（巨大前提是数据广义单增） The relative order of the elements should be kept the same. Then return the number of unique elements in nums.</p>
+<p>Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:</p>
+<p>Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums. Return k.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">removeDuplicates</span>(<span class="params">self, nums</span>):</span><br><span class="line">        dummy=<span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i]!=nums[i-<span class="number">1</span>]:</span><br><span class="line">                nums[dummy]=nums[i]</span><br><span class="line">                dummy+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> dummy</span><br></pre></td></tr></table></figure>
+
+<h2 id="27-Remove-Elements"><a href="#27-Remove-Elements" class="headerlink" title="(27) Remove Elements"></a>(27) Remove Elements</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">removeElement</span>(<span class="params">self, nums, val</span>):</span><br><span class="line">        index=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i]!=val:</span><br><span class="line">                nums[index]=nums[i]</span><br><span class="line">                index+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> index</span><br><span class="line"></span><br><span class="line">solution = Solution()</span><br><span class="line">val=<span class="number">3</span></span><br><span class="line">nums = [<span class="number">3</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">result = solution.removeElement(nums,val)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<h2 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="(35) Search Insert Position"></a>(35) Search Insert Position</h2><h3 id="Method-1：Biscant"><a href="#Method-1：Biscant" class="headerlink" title="Method 1：Biscant"></a>Method 1：Biscant</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">searchInsert</span>(<span class="params">self, nums, target</span>):</span><br><span class="line">        left=<span class="number">0</span></span><br><span class="line">        right=<span class="built_in">len</span>(nums)-<span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> left&lt;=right:</span><br><span class="line">            mid=(left+right)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> nums[mid]==target:</span><br><span class="line">                <span class="keyword">return</span> mid</span><br><span class="line">            <span class="keyword">elif</span> nums[mid]&gt;target:</span><br><span class="line">                right=mid-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                left=mid+<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> left</span><br></pre></td></tr></table></figure>
+<!-- #报错原因
+- `for i in range(len(nums))`：这个循环会从索引`0`开始迭代到数组的最后一个索引。
+- 在第一次循环迭代时，“if nums[i] == target”检查是否找到了`target`，如果找到了，返回索引。
+- `elif nums[i] < target and nums[i+1] > target` : 这个条件检查是否” target”应该插入到 `nums[i]`和` nums $[i+1$ ]`之间。
+- `else”：如果以上条件都不满足，就返回`len(nums)” -->
+
+<h3 id="Method-2-Traditional-Index"><a href="#Method-2-Traditional-Index" class="headerlink" title="Method 2: Traditional Index"></a>Method 2: Traditional Index</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">searchInsert</span>(<span class="params">self, nums, target</span>):</span><br><span class="line">        k=<span class="number">0</span></span><br><span class="line">        s=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i]!=target:</span><br><span class="line">                k+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> k</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[j-<span class="number">1</span>] &lt; target:</span><br><span class="line">                <span class="keyword">if</span> nums[j] &gt; target:</span><br><span class="line">                    <span class="keyword">return</span> j</span><br><span class="line">        <span class="keyword">return</span>(<span class="built_in">len</span>(nums))</span><br></pre></td></tr></table></figure>
+
+<h2 id="66-Plus-One"><a href="#66-Plus-One" class="headerlink" title="(66) Plus One"></a>(66) Plus One</h2><!-- 格式转换版(一) -->
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">plusOne</span>(<span class="params">self, digits</span>) :</span><br><span class="line">        digits = <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(<span class="built_in">map</span>(<span class="built_in">str</span>, digits)))</span><br><span class="line">        digits+=<span class="number">1</span></span><br><span class="line">        digits = [<span class="built_in">int</span>(digit) <span class="keyword">for</span> digit <span class="keyword">in</span> <span class="built_in">str</span>(digits)]</span><br><span class="line">        <span class="keyword">return</span> digits</span><br></pre></td></tr></table></figure>
+
+<!-- 格式转换版(二) -->
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">plusOne</span>(<span class="params">self, digits</span>):</span><br><span class="line">        idx=<span class="built_in">len</span>(digits)-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> idx&gt;=<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">if</span> digits[idx]==<span class="number">9</span>:</span><br><span class="line">                digits[idx]=<span class="number">0</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                digits[idx]+=<span class="number">1</span></span><br><span class="line">                <span class="keyword">return</span> digits</span><br><span class="line">            idx -=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> digits</span><br></pre></td></tr></table></figure>
+
+<!-- index方法一 -->
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">plusOne</span>(<span class="params">self, digits</span>): </span><br><span class="line">        <span class="keyword">for</span> i, d <span class="keyword">in</span> <span class="built_in">reversed</span>(<span class="built_in">list</span>(<span class="built_in">enumerate</span>(digits))):</span><br><span class="line">            <span class="keyword">if</span> d &lt; <span class="number">9</span>:</span><br><span class="line">                digits[i] += <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> digits</span><br><span class="line">            digits[i] = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> [<span class="number">1</span>] + digits</span><br></pre></td></tr></table></figure>
+
+<h3 id="121-Best-Time-to-Buy-and-Sell-Stock"><a href="#121-Best-Time-to-Buy-and-Sell-Stock" class="headerlink" title="(121)Best Time to Buy and Sell Stock"></a>(121)Best Time to Buy and Sell Stock</h3><h3 id="136-Single-Number"><a href="#136-Single-Number" class="headerlink" title="(136)Single Number"></a>(136)Single Number</h3><h3 id="169-Majority-Element"><a href="#169-Majority-Element" class="headerlink" title="(169)Majority Element"></a>(169)Majority Element</h3><h3 id="283-Move-Zeroes"><a href="#283-Move-Zeroes" class="headerlink" title="(283)Move Zeroes"></a>(283)Move Zeroes</h3><h3 id="448-Find-All-Numbers-Disappeared-in-an-Array"><a href="#448-Find-All-Numbers-Disappeared-in-an-Array" class="headerlink" title="(448)Find All Numbers Disappeared in an Array"></a>(448)Find All Numbers Disappeared in an Array</h3><h2 id="2-Medium"><a href="#2-Medium" class="headerlink" title="2.Medium"></a>2.Medium</h2><h3 id="15-3Sum"><a href="#15-3Sum" class="headerlink" title="(15)3Sum"></a>(15)3Sum</h3><h3 id="31-Next-Permutation"><a href="#31-Next-Permutation" class="headerlink" title="(31)Next Permutation"></a>(31)Next Permutation</h3><h3 id="33-Search-in-Rotated-Sorted-Array"><a href="#33-Search-in-Rotated-Sorted-Array" class="headerlink" title="(33)Search in Rotated Sorted Array"></a>(33)Search in Rotated Sorted Array</h3><h3 id="34-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#34-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="(34)Find First and Last Position of Element in Sorted Array"></a>(34)Find First and Last Position of Element in Sorted Array</h3><h3 id="53-Maximum-Subarray"><a href="#53-Maximum-Subarray" class="headerlink" title="(53)Maximum Subarray"></a>(53)Maximum Subarray</h3><h3 id="55-Jump-Game"><a href="#55-Jump-Game" class="headerlink" title="(55)Jump Game"></a>(55)Jump Game</h3><h3 id="56-Merge-Intervals"><a href="#56-Merge-Intervals" class="headerlink" title="(56)Merge Intervals"></a>(56)Merge Intervals</h3><h3 id="64-Minimum-Path-Sum"><a href="#64-Minimum-Path-Sum" class="headerlink" title="(64)Minimum Path Sum"></a>(64)Minimum Path Sum</h3><h3 id="79-Word-Search"><a href="#79-Word-Search" class="headerlink" title="(79)Word Search"></a>(79)Word Search</h3><h3 id="105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal"><a href="#105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal" class="headerlink" title="(105)Construct Binary Tree from Preorder and Inorder Traversal"></a>(105)Construct Binary Tree from Preorder and Inorder Traversal</h3><h3 id="128-Longest-Consecutive-Sequence"><a href="#128-Longest-Consecutive-Sequence" class="headerlink" title="(128)Longest Consecutive Sequence"></a>(128)Longest Consecutive Sequence</h3><h3 id="139-Word-Break"><a href="#139-Word-Break" class="headerlink" title="(139)Word Break"></a>(139)Word Break</h3><h3 id="152-Maximum-Product-Subarray"><a href="#152-Maximum-Product-Subarray" class="headerlink" title="(152)Maximum Product Subarray"></a>(152)Maximum Product Subarray</h3><h3 id="198-House-Robber"><a href="#198-House-Robber" class="headerlink" title="(198)House Robber"></a>(198)House Robber</h3><h3 id="200-Number-of-Islands"><a href="#200-Number-of-Islands" class="headerlink" title="(200)Number of Islands"></a>(200)Number of Islands</h3><h3 id="215-Kth-Largest-Element-in-an-Array"><a href="#215-Kth-Largest-Element-in-an-Array" class="headerlink" title="(215)Kth Largest Element in an Array"></a>(215)Kth Largest Element in an Array</h3><h3 id="221-Maximal-Square"><a href="#221-Maximal-Square" class="headerlink" title="(221)Maximal Square"></a>(221)Maximal Square</h3><h3 id="238-Product-of-Array-Except-Self"><a href="#238-Product-of-Array-Except-Self" class="headerlink" title="(238)Product of Array Except Self"></a>(238)Product of Array Except Self</h3><h3 id="240-Search-a-2D-Matrix-II"><a href="#240-Search-a-2D-Matrix-II" class="headerlink" title="(240)Search a 2D Matrix II"></a>(240)Search a 2D Matrix II</h3><h3 id="253-Meeting-Rooms-II"><a href="#253-Meeting-Rooms-II" class="headerlink" title="(253)Meeting Rooms II"></a>(253)Meeting Rooms II</h3><h3 id="300-Longest-Increasing-Subsequence"><a href="#300-Longest-Increasing-Subsequence" class="headerlink" title="(300)Longest Increasing Subsequence"></a>(300)Longest Increasing Subsequence</h3><h3 id="309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown"><a href="#309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown" class="headerlink" title="(309)Best Time to Buy and Sell Stock with Cooldown"></a>(309)Best Time to Buy and Sell Stock with Cooldown</h3><h3 id="338-Counting-Bits"><a href="#338-Counting-Bits" class="headerlink" title="(338)Counting Bits"></a>(338)Counting Bits</h3><h3 id="347-Top-K-Frequent-Elements"><a href="#347-Top-K-Frequent-Elements" class="headerlink" title="(347)Top K Frequent Elements"></a>(347)Top K Frequent Elements</h3><h3 id="399-Evaluate-Division"><a href="#399-Evaluate-Division" class="headerlink" title="(399)Evaluate Division"></a>(399)Evaluate Division</h3><h3 id="406-Queue-Reconstruction-by-Height"><a href="#406-Queue-Reconstruction-by-Height" class="headerlink" title="(406)Queue Reconstruction by Height"></a>(406)Queue Reconstruction by Height</h3><h3 id="416-Partition-Equal-Subset-Sum"><a href="#416-Partition-Equal-Subset-Sum" class="headerlink" title="(416)Partition Equal Subset Sum"></a>(416)Partition Equal Subset Sum</h3><h3 id="581-Shortest-Unsorted-Continuous-Subarray"><a href="#581-Shortest-Unsorted-Continuous-Subarray" class="headerlink" title="(581)Shortest Unsorted Continuous Subarray"></a>(581)Shortest Unsorted Continuous Subarray</h3><h3 id="621-Task-Scheduler"><a href="#621-Task-Scheduler" class="headerlink" title="(621)Task Scheduler"></a>(621)Task Scheduler</h3><h3 id="739-Daily-Temperatures"><a href="#739-Daily-Temperatures" class="headerlink" title="(739)Daily Temperatures"></a>(739)Daily Temperatures</h3><h2 id="3-Hard"><a href="#3-Hard" class="headerlink" title="3.Hard"></a>3.Hard</h2><h3 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="(84)Largest Rectangle in Histogram"></a>(84)Largest Rectangle in Histogram</h3><h3 id="85-Maximal-Rectangle"><a href="#85-Maximal-Rectangle" class="headerlink" title="(85)Maximal Rectangle"></a>(85)Maximal Rectangle</h3><h3 id="239-Sliding-Window-Maximum"><a href="#239-Sliding-Window-Maximum" class="headerlink" title="(239)Sliding Window Maximum"></a>(239)Sliding Window Maximum</h3><h3 id="312-Burst-Balloons"><a href="#312-Burst-Balloons" class="headerlink" title="(312)Burst Balloons"></a>(312)Burst Balloons</h3>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

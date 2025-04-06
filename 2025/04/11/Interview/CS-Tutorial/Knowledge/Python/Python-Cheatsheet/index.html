@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h3 id="1"><a href="#1" class="headerlink" title="(1)"></a>(1)</h3><p>sorted(s)– [“o”,”p”,”s”,”t”]</p>
+<blockquote>
+<p>“”.join – “opst”</p>
+</blockquote>
+<blockquote>
+<p>list.index(value, start, end)</p>
+</blockquote>
+<p>list.append()<br>set.add(&#x2F;)<br>list.remove()<br>set.pop()</p>
+<h3 id="2-Data-Model-and-dunder-methods"><a href="#2-Data-Model-and-dunder-methods" class="headerlink" title="(2) Data Model and dunder methods"></a>(2) Data Model and dunder methods</h3><table>
+<thead>
+<tr>
+<th>操作符&#x2F;行为</th>
+<th>对应的魔法方法</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加法 <code>+</code></td>
+<td><code>__add__</code></td>
+<td><code>vec1 + vec2</code></td>
+</tr>
+<tr>
+<td>减法 <code>-</code></td>
+<td><code>__sub__</code></td>
+<td><code>vec1 - vec2</code></td>
+</tr>
+<tr>
+<td>乘法 <code>*</code></td>
+<td><code>__mul__</code></td>
+<td><code>vec1 * vec2</code></td>
+</tr>
+<tr>
+<td>真除法 <code>/</code></td>
+<td><code>__truediv__</code></td>
+<td><code>vec1 / vec2</code></td>
+</tr>
+<tr>
+<td>地板除法 <code>//</code></td>
+<td><code>__floordiv__</code></td>
+<td><code>vec1 // vec2</code></td>
+</tr>
+<tr>
+<td>比较 <code>&lt;</code></td>
+<td><code>__lt__</code></td>
+<td><code>vec1 &lt; vec2</code></td>
+</tr>
+<tr>
+<td>比较 <code>==</code></td>
+<td><code>__eq__</code></td>
+<td><code>vec1 == vec2</code></td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">VectorND</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, *args</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Create a VectorND from a sequence of real numbers.&quot;&quot;&quot;</span></span><br><span class="line">        self.values = <span class="built_in">list</span>(args)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__len__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Return the length of the vector.&quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">len</span>(self.values)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__eq__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Check if the vector is equal to another.&quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">isinstance</span>(other, VectorND):</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">return</span> self.values == other.values</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__add__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Add two VectorND objects and return a new VectorND.&quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(self) != <span class="built_in">len</span>(other):</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&quot;vector lengths are incompatible&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> VectorND(*(a + b <span class="keyword">for</span> a, b <span class="keyword">in</span> <span class="built_in">zip</span>(self.values, other.values)))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__sub__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Subtract one VectorND object from another.&quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(self) != <span class="built_in">len</span>(other):</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&quot;vector lengths are incompatible&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> VectorND(*(a - b <span class="keyword">for</span> a, b <span class="keyword">in</span> <span class="built_in">zip</span>(self.values, other.values)))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__repr__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;Output the &quot;official&quot; string representation of the object.&quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">f&quot;Vector: <span class="subst">&#123;self.values&#125;</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Example usage</span></span><br><span class="line">vec1 = VectorND(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">vec2 = VectorND(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>)</span><br><span class="line"><span class="built_in">print</span>(vec1+ vec2)  <span class="comment"># Output: Vector: [5, 7, 9]</span></span><br><span class="line"><span class="built_in">print</span>(vec1 - vec2)  <span class="comment"># Output: Vector: [-3, -3, -3]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(vec1))    <span class="comment"># Output: 3</span></span><br><span class="line"><span class="built_in">print</span>(vec1 == vec2) <span class="comment"># Output: False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="string">f&quot;Vector:<span class="subst">&#123;self.values&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Matrix-Operation"><a href="#3-Matrix-Operation" class="headerlink" title="(3) Matrix Operation"></a>(3) Matrix Operation</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">binv = np.linalg.inv(b) <span class="comment">#逆矩阵</span></span><br><span class="line">binv = np.linalg.det(b) <span class="comment">#行列式</span></span><br><span class="line">binv = np.linalg.eig(b) <span class="comment">#特征值</span></span><br><span class="line">binv = np.linalg.svd(b) <span class="comment">#奇异值分解，U∑V;奇异值=特征V值的开方</span></span><br><span class="line">np.linspace(<span class="number">0</span>,<span class="number">15</span>,<span class="number">10</span>) </span><br></pre></td></tr></table></figure>
+
+<h3 id="4-DataFrame-Operation"><a href="#4-DataFrame-Operation" class="headerlink" title="(4) DataFrame Operation"></a>(4) DataFrame Operation</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">df.iloc[<span class="number">2</span>] <span class="comment"># 第三行</span></span><br><span class="line">df.loc[<span class="string">&#x27;1&#x27;</span>] <span class="comment">#以1作为index的那一行</span></span><br><span class="line">df.loc[[<span class="string">&#x27;2&#x27;</span>,<span class="string">&#x27;3&#x27;</span>],<span class="string">&#x27;h&#x27;</span>] <span class="comment">#2,3作为index同时h作为列的数据</span></span><br><span class="line">df = pd.DataFrame(np.random.randn(<span class="number">3</span>,<span class="number">3</span>),index=<span class="string">&#x27;1 2 3&#x27;</span>.split(),columns=<span class="string">&#x27;1 2 3&#x27;</span>.split()) <span class="comment">#randn 是正态分布</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

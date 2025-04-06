@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Economy &amp; Business- Visulization - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/About/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2025/04/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <strong><a href="/2025/04/11/Project/Economy/Business-Visualization/Business-Visualization/index.html">Business Visualization</a></small></strong></em></p>
+<style>
+.image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+        hover ~ img {
+        filter: blur(100000px); /* 鼠标碰到按钮后，图片变模糊 */
+        }
+    }
+</style>
+
+<h3 id="power-bi-section">1. Power BI</h3>
+
+<p><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/power-platform/products/power-bi/">Power BI</a> offers a wide range of applications in the business world.Here I analyzed the performance of various groups within a gym over the past two years, including different regions, stores, and types of coaches, conducting a correlational analysis.</p>
+<blockquote>
+<p>Project Address: <a href="/zip/Business-Visualization-Case.pbix">here</a></p>
+</blockquote>
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/Vu9eGUZYsjSXn1E.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/igIpwYW7R9EXqHO.png" style="width: 50%; height: auto;">
+</div>
+
+<h3 id="2-Thinkcell-and-Tableau"><a href="#2-Thinkcell-and-Tableau" class="headerlink" title="2. Thinkcell and Tableau"></a>2. <a target="_blank" rel="noopener" href="https://www.think-cell.com/en">Thinkcell</a> and <a target="_blank" rel="noopener" href="https://www.tableau.com/en-gb">Tableau</a></h3><h4 id="tableau-section">2.1 Goldman Sachs Stock Pitch:</h4> 
+Here we select Bilibili as the target company within an industry and forecast its revenue and other metrics by analyzing the macro environment post-pandemic recovery and the rising trend of Bilibili's game business.
+
+<blockquote>
+<p>Bilibili Valuation:<a href="/pdf/Group6_BILI_Stock_Pitch.pdf">project address</a></p>
+</blockquote>
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/cYTeUGmha5yONR7.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/grAUdcLNnChQkJf.png" style="width: 50%; height: auto;">
+</div>
+
+<h4 id="2-2-SHARE-Case-Competition"><a href="#2-2-SHARE-Case-Competition" class="headerlink" title="2.2 SHARE Case Competition:"></a>2.2 SHARE Case Competition:</h4><p>This case offers us more opportunities to analyze the nascent new energy industry and the synergistic effects with upstream parts manufacturers, downstream B2C and B2B consumers, plus internet companies.</p>
+<blockquote>
+<p>Sustainable Vehicle Macro Overview:<a href="/zip/ShARE-Sustainable-vehicle-development.pdf">project address</a></p>
+</blockquote>
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/Xc9m7HNvzpPZ4h2.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/oxBV7ZkjNPuDzG3.png" style="width: 50%; height: auto;">
+</div>
+ 
+<h4 id="thinkcell-section">2.3 Roland Berger Consulting Challenge:</h4> 
+I analyzed the infrastructure industry for this case, offering constructive suggestions for airports' unseen strategies, such as expansion or outsourcing, based on linear metrics like passenger flow.
+
+<blockquote>
+<p>Airport Mode Analysis:<a href="/zip/Airport-Planning-Roland-Berger-Challenge.pdf">project address</a></p>
+</blockquote>
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/QPy4bhzenGOaVsE.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/Ng1PesoS7zwmFBD.png" style="width: 50%; height: auto;">
+</div>
+
+<h4 id="2-4-Food-Ingedient-Industry"><a href="#2-4-Food-Ingedient-Industry" class="headerlink" title="2.4 Food Ingedient Industry:"></a>2.4 Food Ingedient Industry:</h4><p>I focused particularly on the disruptive impact of technologies like genetic engineering on traditional sectors. It explores industry development patterns and ROI through data mining, data cleansing, and regression analysis.</p>
+<blockquote>
+<p>MA Report:<a href="/zip/Food-Ingredient-MA-targeted-Report.pdf">project address</a></p>
+</blockquote>
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/ohsc5bfn3BQCySX.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/w9lSQCxdGRfvhN4.png" style="width: 50%; height: auto;">
+</div>
+
+<h3 id="3-Python"><a href="#3-Python" class="headerlink" title="3. Python"></a>3. Python</h3><p>Here I used applied R on cluster to do the customer profile engineering job and make suggestions to the medicine sales</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="https://s2.loli.net/2024/01/07/hTAWm43S7daYowL.jpg" style="max-width: 50%; height: auto;">
+</div>
+
+<blockquote>
+<p>Project <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/113H0X4zxGXa93fTv2rb60Ar2lkD9SN-s/view?usp=sharing">Code</a></p>
+</blockquote>
+<h3 id="4-Neo4j"><a href="#4-Neo4j" class="headerlink" title="4. Neo4j"></a>4. Neo4j</h3><p>Here is the representation of the <a href="/2023/09/11/Project/Economy/Business-Visualization/Knowledge-Map/index.html">Knowledge Map</a></p>
+<h3 id="5-Website"><a href="#5-Website" class="headerlink" title="5.Website"></a>5.<a target="_blank" rel="noopener" href="https://www.founderjar.com/best-data-visualization-tools/">Website</a></h3><p>You could refer to my <a href="/2023/09/11/Interview/CS-Tutorial/index.html">tutorial</a> where I included 3 different ways to do about website visualization in python </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Graph</title>
+    <style>
+        .link {
+            stroke-width: 2px;
+            /* stroke-dasharray: 5, 5; removed dashed line style */
+        }
+        .link.management { stroke: #7DC69B; }
+        .node text {
+            pointer-events: none;
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+            margin: auto; /* Center the SVG */
+            border: 1px solid #ccc; /* Optional: Add a border for debugging */
+        }
+    </style>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        // Set the dimensions of the SVG canvas
+        const width = 1200; // Increased width
+        const height = 850; // Increased height
+        const data = [
+     {
+          "subject": "Pan Gang",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Legal Representative, Beneficial Owner, Chairman, Executive Director, President"
+     },
+     {
+          "subject": "Zhao Chengxia",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Executive Director, President, Chief Financial Officer"
+     },
+     {
+          "subject": "Wang Xiaogang",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Executive Director, President"
+     },
+     {
+          "subject": "Lu Gang",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Chaolu",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Wang Yanfang",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Employee Director"
+     },
+     {
+          "subject": "Zhao Ying",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Employee Director"
+     },
+     {
+          "subject": "Cai Yuanming",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Shi Fang",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Ji Shao",
+          "relation": "management",
+          "object": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Chen Lang",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Beneficial Owner, Chairman"
+     },
+     {
+          "subject": "Lu Minfang",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Legal Representative, General Manager, Director"
+     },
+     {
+          "subject": "Zhang Ping",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Wen Yongping",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Wang Yan",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Guo Lidong",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Chairman of the Supervisory Board"
+     },
+     {
+          "subject": "Liu Enduo",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Supervisor"
+     },
+     {
+          "subject": "Li Xiuli",
+          "relation": "management",
+          "object": "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.",
+          "identity": "Supervisor"
+     },
+     {
+          "subject": "Huang Liming",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Legal Representative, Beneficial Owner"
+     },
+     {
+          "subject": "Ben Min",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Director, General Manager"
+     },
+     {
+          "subject": "Lu Qikai",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Director"
+     },
+     {
+          "subject": "Xu Meihua",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Employee Director"
+     },
+     {
+          "subject": "Mao Huigang",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Gao Li",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Zhao Ziye",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Independent Director"
+     },
+     {
+          "subject": "Zhou Wen",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Supervisor"
+     },
+     {
+          "subject": "Gao Dandan",
+          "relation": "management",
+          "object": "Bright Dairy & Food Co., Ltd.",
+          "identity": "Employee Supervisor"
+     }
+];
+        const colorMap = {
+            "Pan Gang": "#F2A1A7",
+            "Zhao Chengxia": "#7DC69B",
+            "Wang Xiaogang": "#9BD7F3",
+            "Lu Gang": "#FBDDDD",
+            "Chaolu": "#FCE6CF",
+            "Wang Yanfang": "#D5EAD9",
+            "Zhao Ying": "#D8EEFB",
+            "Cai Yuanming": "#DCD7EB",
+            "Shi Fang": "#F2A1A7",
+            "Ji Shao": "#7DC69B",
+            "Chen Lang": "#9BD7F3",
+            "Lu Minfang": "#FBDDDD",
+            "Zhang Ping": "#FCE6CF",
+            "Wen Yongping": "#D5EAD9",
+            "Wang Yan": "#D8EEFB",
+            "Guo Lidong": "#DCD7EB",
+            "Liu Enduo": "#F2A1A7",
+            "Li Xiuli": "#7DC69B",
+            "Huang Liming": "#9BD7F3",
+            "Ben Min": "#FBDDDD",
+            "Lu Qikai": "#FCE6CF",
+            "Xu Meihua": "#D5EAD9",
+            "Mao Huigang": "#D8EEFB",
+            "Gao Li": "#DCD7EB",
+            "Zhao Ziye": "#F2A1A7",
+            "Zhou Wen": "#7DC69B",
+            "Gao Dandan": "#9BD7F3",
+            "Inner Mongolia Yili Industrial Group Co., Ltd.": "#D8EEFB",
+            "Inner Mongolia Mengniu Dairy (Group) Co., Ltd.": "#D8EEFB",
+            "Bright Dairy & Food Co., Ltd.": "#D8EEFB"
+        };
+        // Create SVG element
+        const svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        // Add title
+svg.append("text")
+    .attr("x", width / 2)
+    .attr("y", 40)
+    .attr("text-anchor", "middle")
+    .style("font-size", "24px")
+    .style("font-weight", "bold")
+    .text("Knowledge Map of Dairy Management Relationships");
+        // Create force simulation
+        const simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(d => d.id).distance(400)) // Adjust the distance between nodes
+            .force("charge", d3.forceManyBody().strength(-100)) // Adjust the repulsion force between nodes
+            .force("center", d3.forceCenter(width / 2, height / 2)) // Set the center position
+            .force("y", d3.forceY(height / 2).strength(0.001)); // Increase the force in the y-axis direction
+        // Parse data and construct nodes and links
+        const nodes = [];
+        const links = [];
+        data.forEach(d => {
+            links.push({
+                source: d.subject,
+                target: d.object,
+                type: d.relation
+            });
+            if (!nodes.find(n => n.id === d.subject)) {
+                nodes.push({ id: d.subject });
+            }
+            if (!nodes.find(n => n.id === d.object)) {
+                nodes.push({ id: d.object });
+            }
+        });
+        // Add links (lines)
+        const link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links)
+            .enter().append("line")
+            .attr("class", d => "link " + d.type)
+            .style("stroke", d => d.type === "management" ? "#7DC69B" : "#999");
+        // Add nodes (circles)
+        const node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("g")
+            .data(nodes)
+            .enter().append("g");
+        node.append("circle")
+            .attr("r", 10) // Increase the radius of the nodes
+            .attr("fill", d => colorMap[d.id] || "#D8EEFB"); // Use color mapping
+        node.append("text")
+            .attr("x", 12) // Increase the offset of the text
+            .attr("y", 4)
+            .text(d => d.id);
+        // Set the nodes and links for the force simulation
+        simulation
+            .nodes(nodes)
+            .on("tick", ticked);
+        simulation.force("link")
+            .links(links);
+        // Update the positions of the nodes and links on each iteration of the force simulation
+        function ticked() {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        }
+        // Mouse events
+        node.on("mouseover", function(event, d) {
+            link
+                .transition()
+                .duration(300)
+                .style("stroke-opacity", l => l.source.id === d.id || l.target.id === d.id ? 1 : 0.1)
+                .style("stroke-width", l => l.source.id === d.id || l.target.id === d.id ? 4 : 2); // Thicken the links
+            node
+                .transition()
+                .duration(300)
+                .attr("transform", function(o) {
+                    if (o.id === d.id || links.find(l => (l.source.id === d.id && l.target.id === o.id) || (l.target.id === d.id && l.source.id === o.id))) {
+                        return `translate(${o.x},${o.y}) scale(1.2)`;
+                    } else {
+                        return `translate(${o.x},${o.y})`;
+                    }
+                });
+        }).on("mouseout", function() {
+            link
+                .transition()
+                .duration(300)
+                .style("stroke-opacity", 1)
+                .style("stroke-width", 2); // Restore the link width
+            node
+                .transition()
+                .duration(300)
+                .attr("transform", d => `translate(${d.x},${d.y}) scale(1)`);
+        });
+    </script>
+</body>
+</html>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Project/" rel="tag">#Project</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

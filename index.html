@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          👋Hello Everyone - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+
+
+.shake-image:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
+}
+
+@keyframes shake-small {
+   0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
+}
+
+.shake-text:hover {
+  animation: shake-small 2s;
+  animation-iteration-count: infinite;
+  text-decoration: underline;
+}
+
+
+
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 100, 200, 0.8);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.bubble:hover {
+  transform: scale(1.2);
+  animation: shake 1s;
+}
+
+</style>
+
+
+<p><em><small> Back to <a href="/About/index.html">About Me</a> &gt; <a href="/tags/Project/index.html">Tech Project</a> &gt;<a href="/tags/Interview/index.html">Knowledge Basement</a>&gt;  <a href="/tags/Note/index.html">Note</a> &gt; <a href="/About/index.html">Post</a></small></em></p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <div style="display: flex; align-items: center; justify-content: center; ">
+        <img src="https://s2.loli.net/2024/06/29/XmDAOfclMqdaVUp.png" width="370" height="400" class="shake-image" style="margin-right: 100px;">
+        <div>
+            <font size="10"><strong class="shake-text">Evelyn Du</strong></font>
+            <br><br>
+            <font size="3.5">
+                <a target="_blank" rel="noopener" href="https://www.orie.cornell.edu/orie">Operational Research & Industrial Engineering</a><br>
+                <strong>Cornell</strong> Master of Engineering<br>
+                <strong>Program </strong>Operational Research and Industry Engineering<br>
+                <strong>Anticipated Graduation Date</strong> February 2026<br>  
+                <strong>Concentration </strong>Financial Engineering<br>
+                <strong>Interest Areas:</strong> Quant & Trading
+            </font>
+        </div>
+    </div>
+</div>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Me</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.name = <span class="string">&quot;Evelyn(Wenke) Du&quot;</span></span><br><span class="line">        self.MBTI = <span class="string">&quot;ENTJ&quot;</span></span><br><span class="line">        self.born_year = <span class="number">2001</span></span><br><span class="line">        self.laptop_brand = <span class="string">&quot;hp&quot;</span></span><br><span class="line">        self.curr_location = <span class="string">&quot;Ithaca, New York, USA&quot;</span></span><br><span class="line">        self.interes= <span class="string">&quot;Kpop! Language Learning! Aerobics!&quot;</span></span><br><span class="line">        self.undergraduate = <span class="string">&quot;Bachelor of Accounting and Computer Science, Excellence, RUC(Renmin University of China)&quot;</span></span><br><span class="line">        self.dual_undergraduate = <span class="string">&quot;Bachelor of Criminal Justice, Minor in Information System, Cum Laude, Maine University, USA&quot;</span></span><br><span class="line">        self.paced_graduate = <span class="string">&quot;Master of Big Data and Intelligence, The Universidad Intrnacional Isabel i de castilla, ENEB,Span&quot;</span></span><br><span class="line">    <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Technical-Background"><a href="#Technical-Background" class="headerlink" title="Technical Background"></a>Technical Background</h2><div style="background-color: #f2f2f2;padding: 5px;">
+<font size="3.5">
+  
+<ul>
+<li>📟 My expertise in languages includes <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/">Python</a>, <a target="_blank" rel="noopener" href="https://www.mysql.com/">My SQL</a>, <a target="_blank" rel="noopener" href="https://www.w3schools.com/js/DEFAULT.asp">Javascript</a>, <a target="_blank" rel="noopener" href="https://www.mathworks.com/products/matlab.html">Matlab</a>, <a target="_blank" rel="noopener" href="https://www.w3schools.com/html/">C++</a> and <a target="_blank" rel="noopener" href="https://www.rstudio.com/categories/rstudio-ide/">R</a></li>
+<li>🖨️ The toolkit I use includes <a target="_blank" rel="noopener" href="https://www.stata.com/">STATA</a>, <a target="_blank" rel="noopener" href="https://www.anaconda.com/">Jupter</a>, <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>, <a target="_blank" rel="noopener" href="https://www.joinquant.com/">JointQuant</a>, <a target="_blank" rel="noopener" href="https://www.myquant.cn/">MyQuant</a> and <a target="_blank" rel="noopener" href="https://www.tableau.com/">Tableau</a></li>
+<li>🖱️ The frameworks I am familiar with include <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Deep_learning">Deep Learning</a>, <a target="_blank" rel="noopener" href="https://www.tensorflow.org/">TensorFlow</a>, <a target="_blank" rel="noopener" href="https://nodejs.org/en">Node.js</a>, <a target="_blank" rel="noopener" href="https://pytorch.org/">Pytorch</a>, <a target="_blank" rel="noopener" href="https://numpy.org/">Numpy</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Large_language_model">LLM</a>, <a target="_blank" rel="noopener" href="https://seaborn.pydata.org/">Seaborn</a> and <a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/index.html">Scikit-learn</a>.</li>
+<li>🎮 I’m recently learning game design <a target="_blank" rel="noopener" href="https://unity.com/">Unity</a> and IOS software development <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Swift</a><br></font>font&gt;</div></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

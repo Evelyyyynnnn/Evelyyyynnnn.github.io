@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p>Here I will record some ordinary SQL questions for exercise and my way to exercise SQL is always to <em>learn from the real questions</em></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 创建图文点赞数据表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `<span class="keyword">table</span>` (</span><br><span class="line">    `p_date` <span class="type">DATE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,          <span class="comment">-- 时间分区</span></span><br><span class="line">    `content_id` <span class="type">INT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,       <span class="comment">-- 图文内容ID</span></span><br><span class="line">    `like_cnt` <span class="type">INT</span> <span class="keyword">DEFAULT</span> <span class="number">0</span>,        <span class="comment">-- 图文当天累计点赞数</span></span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (`p_date`, `content_id`)</span><br><span class="line">) CHARSET<span class="operator">=</span>utf8;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 插入示例数据</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `<span class="keyword">table</span>` <span class="keyword">VALUES</span></span><br><span class="line">(<span class="string">&#x27;2025-09-01&#x27;</span>, <span class="number">1</span>, <span class="number">100</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-02&#x27;</span>, <span class="number">1</span>, <span class="number">150</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-03&#x27;</span>, <span class="number">1</span>, <span class="number">200</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-01&#x27;</span>, <span class="number">2</span>, <span class="number">50</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-02&#x27;</span>, <span class="number">2</span>, <span class="number">80</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-03&#x27;</span>, <span class="number">2</span>, <span class="number">120</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-01&#x27;</span>, <span class="number">3</span>, <span class="number">300</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-02&#x27;</span>, <span class="number">3</span>, <span class="number">400</span>),</span><br><span class="line">(<span class="string">&#x27;2025-09-03&#x27;</span>, <span class="number">3</span>, <span class="number">500</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 查询9.1-9.30每天的点赞增量</span></span><br><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    t1.p_date,</span><br><span class="line">    t1.content_id,</span><br><span class="line">    t1.like_cnt <span class="keyword">AS</span> like_cnt,</span><br><span class="line">    <span class="built_in">COALESCE</span>(t2.like_cnt, <span class="number">0</span>) <span class="keyword">AS</span> like_cnt_1day,</span><br><span class="line">    (t1.like_cnt <span class="operator">-</span> <span class="built_in">COALESCE</span>(t2.like_cnt, <span class="number">0</span>)) <span class="keyword">AS</span> like_cnt_diff</span><br><span class="line"><span class="keyword">FROM</span> `<span class="keyword">table</span>` t1</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> `<span class="keyword">table</span>` t2</span><br><span class="line"><span class="keyword">ON</span> t1.content_id <span class="operator">=</span> t2.content_id <span class="keyword">AND</span> t1.p_date <span class="operator">=</span> DATE_ADD(t2.p_date, <span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">DAY</span>)</span><br><span class="line"><span class="keyword">WHERE</span> t1.p_date <span class="keyword">BETWEEN</span> <span class="string">&#x27;2025-09-01&#x27;</span> <span class="keyword">AND</span> <span class="string">&#x27;2025-09-30&#x27;</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> like_cnt_diff <span class="keyword">DESC</span></span><br><span class="line">LIMIT <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<thead>
+<tr>
+<th>p_date</th>
+<th>content_id</th>
+<th>like_cnt</th>
+<th>like_cnt_1day</th>
+<th>like_cnt_diff</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2025-09-01</td>
+<td>3</td>
+<td>300</td>
+<td>0</td>
+<td>300</td>
+</tr>
+<tr>
+<td>2025-09-01</td>
+<td>1</td>
+<td>100</td>
+<td>0</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2025-09-02</td>
+<td>3</td>
+<td>400</td>
+<td>300</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2025-09-03</td>
+<td>3</td>
+<td>500</td>
+<td>400</td>
+<td>100</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

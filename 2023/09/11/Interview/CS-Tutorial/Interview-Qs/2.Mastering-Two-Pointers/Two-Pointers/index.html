@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Exercise-The Simplest Greedy Algo - |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Two-Pointers"><a href="#Two-Pointers" class="headerlink" title="Two Pointers"></a>Two Pointers</h1><h2 id="1-Easy"><a href="#1-Easy" class="headerlink" title="1.Easy"></a>1.Easy</h2><h3 id="2-Add-Two-Numbers"><a href="#2-Add-Two-Numbers" class="headerlink" title="(2)Add Two Numbers"></a>(2)Add Two Numbers</h3><h2 id="26-Remove-Element-from-Sorted-Array"><a href="#26-Remove-Element-from-Sorted-Array" class="headerlink" title="(26)Remove Element from Sorted Array"></a>(26)Remove Element from Sorted Array</h2><p>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.（巨大前提是数据广义单增） The relative order of the elements should be kept the same. Then return the number of unique elements in nums.</p>
+<p>Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:</p>
+<p>Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums. Return k.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">removeDuplicates</span>(<span class="params">self, nums</span>):</span><br><span class="line">        dummy=<span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i]!=nums[i-<span class="number">1</span>]:</span><br><span class="line">                nums[dummy]=nums[i]</span><br><span class="line">                dummy+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> dummy</span><br></pre></td></tr></table></figure>
+
+<h2 id="27-Remove-Elements"><a href="#27-Remove-Elements" class="headerlink" title="(27)Remove Elements"></a>(27)Remove Elements</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">removeElement</span>(<span class="params">self, nums, val</span>):</span><br><span class="line">        index=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i]!=val:</span><br><span class="line">                nums[index]=nums[i]</span><br><span class="line">                index+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> index</span><br></pre></td></tr></table></figure>
+<h2 id="28-Find-the-Index-of-the-First-Occurrence-in-a-String"><a href="#28-Find-the-Index-of-the-First-Occurrence-in-a-String" class="headerlink" title="(28) Find the Index of the First Occurrence in a String"></a>(28) Find the Index of the First Occurrence in a String</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">strStr</span>(<span class="params">self, haystack, needle</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(haystack)):</span><br><span class="line">            <span class="keyword">if</span> haystack[i:i+<span class="built_in">len</span>(needle)]==needle:</span><br><span class="line">                <span class="keyword">return</span> i</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="141-Linked-List-Cycle"><a href="#141-Linked-List-Cycle" class="headerlink" title="(141)Linked List Cycle"></a>(141)Linked List Cycle</h3><h3 id="283-Move-Zeroes"><a href="#283-Move-Zeroes" class="headerlink" title="(283)Move Zeroes"></a>(283)Move Zeroes</h3><h3 id="345-Reverse-Vowels-of-a-String"><a href="#345-Reverse-Vowels-of-a-String" class="headerlink" title="(345)Reverse Vowels of a String"></a>(345)Reverse Vowels of a String</h3><p><a name="345"></a></p>
+<h4 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">s= <span class="string">&quot;asvisl&quot;</span></span><br><span class="line">s_list=<span class="built_in">list</span>(s)</span><br><span class="line">c_list=<span class="built_in">list</span>(<span class="built_in">reversed</span>(s_list))</span><br><span class="line">s=<span class="string">&#x27;&#x27;</span>.join(c_list)</span><br><span class="line"><span class="built_in">print</span>(s_list,c_list,s)</span><br><span class="line"></span><br><span class="line"><span class="comment">#result:[&#x27;a&#x27;, &#x27;s&#x27;, &#x27;v&#x27;, &#x27;i&#x27;, &#x27;s&#x27;, &#x27;l&#x27;] [&#x27;l&#x27;, &#x27;s&#x27;, &#x27;i&#x27;, &#x27;v&#x27;, &#x27;s&#x27;, &#x27;a&#x27;] lsivsa</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reverseVowels</span>(<span class="params">self,s</span>):</span><br><span class="line">        s_list=<span class="built_in">list</span>(s)</span><br><span class="line">        c_list=<span class="built_in">list</span>(<span class="built_in">reversed</span>(s_list))</span><br><span class="line">        s=<span class="string">&#x27;&#x27;</span>.join(c_list)</span><br><span class="line">        <span class="keyword">return</span> s</span><br></pre></td></tr></table></figure>
+<h4 id="答案："><a href="#答案：" class="headerlink" title="答案："></a>答案：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reverseVowels</span>(<span class="params">self, s</span>):</span><br><span class="line">        Vowels=<span class="built_in">set</span>(<span class="string">&#x27;aeiouAEIOU&#x27;</span>)</span><br><span class="line">        s=<span class="built_in">list</span>(s)</span><br><span class="line">        i,j=<span class="number">0</span>,<span class="built_in">len</span>(s)-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> i&lt;j:</span><br><span class="line">            <span class="keyword">if</span> s[i] <span class="keyword">not</span> <span class="keyword">in</span> Vowels:</span><br><span class="line">                i=i+<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> s[j] <span class="keyword">not</span> <span class="keyword">in</span> Vowels:</span><br><span class="line">                j=j-<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>: </span><br><span class="line">                s[i],s[j]=s[j],s[i]</span><br><span class="line">                i=i+<span class="number">1</span></span><br><span class="line">                j=j-<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>.join(s)</span><br></pre></td></tr></table></figure>
+
+<p>Palindrome questions:<br><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#9">(9) Palindrome Number</a><br><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#345">(345) Reverse Vowels of a String</a><br><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html#680">(680) Valid Palindrome II</a></p>
+<h3 id="680-Valid-Palindrome-II"><a href="#680-Valid-Palindrome-II" class="headerlink" title="(680)Valid Palindrome II"></a>(680)Valid Palindrome II</h3><p><a name="680"></a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">validPalindrome</span>(<span class="params">self, s</span>):</span><br><span class="line">        l,r=<span class="number">0</span>,<span class="built_in">len</span>(s)-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> l&lt;r:</span><br><span class="line">            <span class="keyword">if</span> s[l]!=s[r]:</span><br><span class="line">                <span class="keyword">return</span> s[l+<span class="number">1</span>:r+<span class="number">1</span>] == s[l+<span class="number">1</span>:r+<span class="number">1</span>][::-<span class="number">1</span>] <span class="keyword">or</span> s[l:r] == s[l:r][::-<span class="number">1</span>]</span><br><span class="line">            l+=<span class="number">1</span></span><br><span class="line">            r-=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p>Palindrome questions:<br><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#9">(9) Palindrome Number</a><br><a href="/2023/09/11/Interview/CS-Tutorial/1.The-Simplest-Greedy-Algo/Math/index.html#345">(345) Reverse Vowels of a String</a><br><a href="/2023/09/11/Interview/CS-Tutorial/2.Mastering-Two-Pointers/Two-Pointers/index.html#680">(680) Valid Palindrome II</a></p>
+<h2 id="2-Medium"><a href="#2-Medium" class="headerlink" title="2.Medium"></a>2.Medium</h2><h3 id="5-Longest-Palindromic-Substring"><a href="#5-Longest-Palindromic-Substring" class="headerlink" title="(5)Longest Palindromic Substring"></a>(5)Longest Palindromic Substring</h3><h3 id="15-3Sum"><a href="#15-3Sum" class="headerlink" title="(15)3Sum"></a>(15)3Sum</h3><h3 id="19-Remove-Nth-Node-From-End-of-List"><a href="#19-Remove-Nth-Node-From-End-of-List" class="headerlink" title="(19)Remove Nth Node From End of List"></a>(19)Remove Nth Node From End of List</h3><h3 id="31-Next-Permutation"><a href="#31-Next-Permutation" class="headerlink" title="(31)Next Permutation"></a>(31)Next Permutation</h3><h3 id="142-Linked-List-Cycle-II"><a href="#142-Linked-List-Cycle-II" class="headerlink" title="(142)Linked List Cycle II"></a>(142)Linked List Cycle II</h3><h3 id="148-Sort-List"><a href="#148-Sort-List" class="headerlink" title="(148)Sort List"></a>(148)Sort List</h3><h3 id="253-Meeting-Rooms-II"><a href="#253-Meeting-Rooms-II" class="headerlink" title="(253)Meeting Rooms II"></a>(253)Meeting Rooms II</h3><h3 id="581-Shortest-Unsorted-Continuous-Subarray"><a href="#581-Shortest-Unsorted-Continuous-Subarray" class="headerlink" title="(581)Shortest Unsorted Continuous Subarray"></a>(581)Shortest Unsorted Continuous Subarray</h3><h3 id="633-Sum-of-Square-Numbers"><a href="#633-Sum-of-Square-Numbers" class="headerlink" title="(633)Sum of Square Numbers"></a>(633)Sum of Square Numbers</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">judgeSquareSum</span>(<span class="params">self, c</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(c):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(c):</span><br><span class="line">                <span class="keyword">if</span> i**<span class="number">2</span>+j**<span class="number">2</span>==c:</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Interview/" rel="tag">#Interview</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          |  Evelyn Du 
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  EVELYN DU </span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Tech-Project"><a href="#Tech-Project" class="headerlink" title="Tech Project"></a>Tech Project</h5><ul>
+<li><a href="/2025/04/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2025/04/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2025/04/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Knowledge-Basement"><a href="#Knowledge-Basement" class="headerlink" title="Knowledge Basement"></a>Knowledge Basement</h5><ul>
+<li><a href="/2025/04/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quantitative Finance</a></li>
+<li><a href="/2025/04/11/Interview/CS-Tutorial/CS-Tutorial/index.html">CS Exercise</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2025/04/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2025/04/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2025/04/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2025/04/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2025/04/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2025/04/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2025/04/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h2 id="Notebooks"><a href="#Notebooks" class="headerlink" title="Notebooks"></a>Notebooks</h2><p>xxxxx</p>
+<h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise:"></a>Exercise:</h2><h3 id="1-Group-Anagrams"><a href="#1-Group-Anagrams" class="headerlink" title="1. Group Anagrams"></a>1. Group Anagrams</h3><p>Given an array of strings <code>strs</code>, group all anagrams together into sublists. You may return the output in <strong>any order</strong>.</p>
+<p>An <strong>anagram</strong> is a string that contains the exact same characters as another string, but the order of the characters can be different.</p>
+<p><strong>Input</strong>:<br><code>strs = [&quot;act&quot;,&quot;pots&quot;,&quot;tops&quot;,&quot;cat&quot;,&quot;stop&quot;,&quot;hat&quot;]</code><br><strong>Output</strong>:<br><code>[[&quot;hat&quot;],[&quot;act&quot;,&quot;cat&quot;],[&quot;stop&quot;,&quot;pots&quot;,&quot;tops&quot;]]</code></p>
+<p><strong>Input</strong>:<br><code>strs = [&quot;x&quot;]</code><br><strong>Output</strong>:<br><code>[[&quot;x&quot;]]</code></p>
+<p><strong>Input</strong>:<br><code>strs = [&quot;&quot;]</code><br><strong>Output</strong>:<br><code>[[&quot;&quot;]]</code></p>
+<h3 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">groupAnagrams</span>(<span class="params">self, strs: <span class="built_in">list</span>[<span class="built_in">str</span>]</span>) -&gt; <span class="built_in">list</span>[<span class="built_in">list</span>[<span class="built_in">str</span>]]:</span><br><span class="line">        anagrams = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> s <span class="keyword">in</span> strs:</span><br><span class="line">            key = <span class="string">&#x27;&#x27;</span>.join(<span class="built_in">sorted</span>(s))  </span><br><span class="line">            <span class="comment"># &quot;act&quot; &quot;opst&quot; &quot;opst&quot; &quot;act&quot; &quot;opst&quot; &quot;aht&quot;</span></span><br><span class="line">            <span class="keyword">if</span> key <span class="keyword">not</span> <span class="keyword">in</span> anagrams:</span><br><span class="line">                anagrams[key] = []</span><br><span class="line">            anagrams[key].append(s)</span><br><span class="line">            <span class="comment">#&#123;&quot;act&quot;:[&quot;act&quot;,&quot;cat&quot;], &quot;opst&quot;:[&quot;pots&quot;,&quot;tops&quot;,&quot;stop&quot;],&quot;aht&quot;:[&quot;hat&quot;]&#125;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">list</span>(anagrams.values())</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="2-Top-K-Frequent-Elements"><a href="#2-Top-K-Frequent-Elements" class="headerlink" title="2.Top K Frequent Elements"></a>2.Top K Frequent Elements</h3><p>Given an integer array nums and an integer k, return the k most frequent elements within the array.</p>
+<p>The test cases are generated such that the answer is always unique.</p>
+<p>You may return the output in any order.</p>
+<p>Input: nums &#x3D; [1,2,2,3,3,3], k &#x3D; 2</p>
+<p>Output: [2,3]<br>‘</p>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">topKFrequent</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], k: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]: </span><br><span class="line">        <span class="keyword">if</span> k==<span class="built_in">len</span>(nums):</span><br><span class="line">            <span class="keyword">return</span> nums</span><br><span class="line">        </span><br><span class="line">        count=Counter(nums)</span><br><span class="line">        <span class="comment"># &#123;3:6,4:2,1:1&#125;</span></span><br><span class="line">        <span class="keyword">return</span> heapq.nlargest(k,count.keys(),key=count.get)</span><br><span class="line"></span><br><span class="line">heapq.nlargest(k,count.keys(),key=count.get)</span><br><span class="line">np.linspace(<span class="number">0</span>,<span class="number">15</span>,<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">topKFrequent</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], k: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]: </span><br><span class="line">        <span class="keyword">if</span> k==<span class="built_in">len</span>(nums):</span><br><span class="line">            <span class="keyword">return</span> nums</span><br><span class="line">        frequency=&#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums:</span><br><span class="line">            <span class="keyword">if</span> num <span class="keyword">in</span> frequency:</span><br><span class="line">                frequency[num]+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                frequency[num]=<span class="number">1</span></span><br><span class="line">        <span class="comment"># &#123;3:6,4:2,1:1&#125;</span></span><br><span class="line">        sorted_keys = <span class="built_in">sorted</span>(frequency, key=frequency.get, reverse=<span class="literal">True</span>)</span><br><span class="line">        <span class="keyword">return</span> sorted_keys[:k]</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="3-Bitwise-XOR-of-All-Pairings"><a href="#3-Bitwise-XOR-of-All-Pairings" class="headerlink" title="3.Bitwise XOR of All Pairings"></a>3.Bitwise XOR of All Pairings</h2><h3 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h3><p>You are given two 0-indexed arrays, nums1 and nums2, consisting of non-negative integers. There exists another array, nums3, which contains the bitwise XOR of all pairings of integers between nums1 and nums2 (every integer in nums1 is paired with every integer in nums2 exactly once). Return the bitwise XOR of all integers in nums3.</p>
+<p>Example 1:<br>Input: nums1 &#x3D; [2,1,3], nums2 &#x3D; [10,2,5,0]<br>Output: 13<br>Explanation:<br>A possible nums3 array is [8,0,7,2,11,3,4,1,9,1,6,3].<br>The bitwise XOR of all these numbers is 13, so we return 13.</p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution"></a>Solution</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">xorAllNums</span>(<span class="params">self, nums1: <span class="type">List</span>[<span class="built_in">int</span>], nums2: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        len_1,len_2=<span class="built_in">len</span>(nums1),<span class="built_in">len</span>(nums2)</span><br><span class="line">        freq=&#123;&#125;</span><br><span class="line">        result=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums1:</span><br><span class="line">            freq[num1]=freq.get(num1,<span class="number">0</span>)+len_2</span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums2:</span><br><span class="line">            freq[num2]=freq.get(num2,<span class="number">0</span>)+len_1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> freq:</span><br><span class="line">            <span class="keyword">if</span> freq[num] % <span class="number">2</span>:</span><br><span class="line">                result^=num</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Evelyn Du</div>
+      <div>2025-04-06</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
