@@ -139,17 +139,3 @@ before checking and updating them 20 times a day😄.
 
 <div style="text-align: left;">
 
-<br>
-<font size="8">
-<strong>📝Note</strong> 
-</font>
-<hr style="border: 1px solid gray;">
-
-- This site is created based on the template of [hexo-book](https://www.hexothemes.com/theme/kaiiiz-hexo-theme-book/)
-
-</div>
-<div style="text-align: left;">
-
-- The [self-learning guidance](https://csdiy.wiki/) from PKU
-
-</div>
